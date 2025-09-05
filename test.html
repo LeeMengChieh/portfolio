@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brush Reveal Canvas</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="brushCanvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        const canvas = document.getElementById("brushCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // 設定全螢幕
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // 底層圖片
+        const bg = new Image();
+        bg.src = 'https://picsum.photos/1200/800';
+        bg.onload = () => {
+            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+
+            // 上層黑色遮罩
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            startBrushAnimation();
+        };
+
+        function startBrushAnimation() {
+            const brushCount = 6;
+            const brushes = [];
+
+            // 初始化筆刷資料
+            for (let i = 0; i < brushCount; i++) {
+                brushes.push({
+                    y: (canvas.height / brushCount) * i + (i % 2 ? 20 : -20), // 上下交錯
+                    x: -200,  // 從左邊外開始
+                    width: 200 + Math.random() * 100,  // 每條筆刷寬度稍微不同
+                    height: canvas.height / brushCount + Math.random() * 20,
+                    speed: 1.2 + Math.random() * 0.3
+                });
+            }
+
+            // GSAP 動畫
+            brushes.forEach((brush, i) => {
+                gsap.to(brush, {
+                    x: canvas.width + 200,
+                    duration: 1.2,
+                    delay: i * 0.2,
+                    ease: "power2.inOut",
+                    onUpdate: () => drawBrushes(brushes)
+                });
+            });
+        }
+
+        function drawBrushes(brushes) {
+            // 先畫底圖
+            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+
+            // 再畫黑色遮罩
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 設定混合模式為 destination-out => 擦掉遮罩
+            ctx.globalCompositeOperation = 'destination-out';
+
+            brushes.forEach(brush => {
+                // 模擬筆刷形狀
+                const gradient = ctx.createRadialGradient(
+                    brush.x + brush.width / 2, brush.y + brush.height / 2, 0,
+                    brush.x + brush.width / 2, brush.y + brush.height / 2, brush.width / 2
+                );
+                gradient.addColorStop(0, 'rgba(0,0,0,1)');
+                gradient.addColorStop(1, 'rgba(0,0,0,0)');
+                ctx.fillStyle = gradient;
+
+                ctx.fillRect(brush.x, brush.y, brush.width, brush.height);
+            });
+
+            // 還原混合模式
+            ctx.globalCompositeOperation = 'source-over';
+        }
+
+        // 窗口大小改變自動調整
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+</body>
+
+</html>

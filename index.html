@@ -5,14 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-container">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <header class="site-header">
+        <div class="navbar">
             <a href="#" class="logo">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I15_1617_43_1518.svg" alt="Logo">
+                <img src="./imgs/logo.svg" alt="Logo">
             </a>
             <nav class="main-nav">
                 <ul>
@@ -23,249 +52,108 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <section id="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-title-wrapper">
-                    <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_15_965.svg"
-                        alt="Portfolio Shape" class="hero-title-bg">
-                    <h1 class="hero-title">MengChieh’s<br>Portfolio</h1>
-                </div>
+    </header> -->
+        <section id="title">
+            <div class="hero-title">
+                <img src="./imgs/bg-m.svg" alt="background" class="mobile-bg">
+                <img src="./imgs/kv-bg.svg" alt="background" class="pc-bg">
             </div>
-            <!--merged image-->
-            <div class="hero-illustrations">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1025.svg" alt="Illustration"
-                    style="position:absolute; top:12.5%; left:16.2%; width:21.4%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1024.svg" alt="Illustration"
-                    style="position:absolute; top:1.8%; left:49.4%; width:3.7%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1023.svg" alt="Illustration"
-                    style="position:absolute; top:8.6%; left:30.5%; width:2.5%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1038.svg" alt="Illustration"
-                    style="position:absolute; top:0%; left:64.5%; width:12%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1067.svg" alt="Illustration"
-                    style="position:absolute; top:12.4%; left:48.3%; width:17.9%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_951.svg" alt="Illustration"
-                    style="position:absolute; top:36.9%; left:27.1%; width:18.8%; transform: rotate(-64.87deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_980.svg" alt="Illustration"
-                    style="position:absolute; top:37.9%; left:46.4%; width:37.4%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1016.svg" alt="Illustration"
-                    style="position:absolute; top:34.7%; left:24.9%; width:5.4%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1010.svg" alt="Illustration"
-                    style="position:absolute; top:35.4%; left:43.9%; width:4.3%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1003.svg" alt="Illustration"
-                    style="position:absolute; top:35.4%; left:60.9%; width:5.7%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1013.svg" alt="Illustration"
-                    style="position:absolute; top:34.6%; left:78.5%; width:3.9%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1097.svg" alt="Illustration"
-                    style="position:absolute; top:11.9%; left:68.5%; width:12.4%; transform: rotate(0deg);">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I17_997_14_1116.svg" alt="Illustration"
-                    style="position:absolute; top:10.8%; left:32.1%; width:16.1%; transform: rotate(0deg);">
-            </div>
-        </div>
-        <a href="#about" class="go-to-top">
-            <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/36_1822.svg" alt="Go to top">
-        </a>
-    </section>
-    <section id="about">
-        <div class="about-bg">
-            <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2222.svg" alt="background decoration"
-                class="about-bg-1">
-            <!--merged image-->
-            <div class="about-bg-2">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2226.svg" alt="decoration"
-                    style="position:absolute; top:11.4%; left:82.6%; width:1%; height:10.8%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2227.svg" alt="decoration"
-                    style="position:absolute; top:16.2%; left:86.5%; width:1%; height:10.8%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2228.svg" alt="decoration"
-                    style="position:absolute; top:27.6%; left:22%; width:8.7%; height:11.2%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2234.svg" alt="decoration"
-                    style="position:absolute; top:20.5%; left:6.1%; width:4.9%; height:8.9%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2235.svg" alt="decoration"
-                    style="position:absolute; top:70.5%; left:79.3%; width:16.7%; height:24.8%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2236.svg" alt="decoration"
-                    style="position:absolute; top:42.1%; left:0%; width:21.9%; height:5.3%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2237.svg" alt="decoration"
-                    style="position:absolute; top:48.9%; left:0%; width:21.9%; height:5.3%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2238.svg" alt="decoration"
-                    style="position:absolute; top:68.2%; left:13.7%; width:14%; height:21.6%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2244.svg" alt="decoration"
-                    style="position:absolute; top:55.8%; left:75.9%; width:8%; height:12.4%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2245.svg" alt="decoration"
-                    style="position:absolute; top:86.1%; left:2.8%; width:4.1%; height:9.3%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2246.svg" alt="decoration"
-                    style="position:absolute; top:37.8%; left:72.6%; width:9.8%; height:8.6%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2249.svg" alt="decoration"
-                    style="position:absolute; top:54.6%; left:88.4%; width:17.4%; height:3.8%;">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/26_2250.svg" alt="decoration"
-                    style="position:absolute; top:60.1%; left:88.4%; width:17.4%; height:3.8%;">
-            </div>
-        </div>
-        <div class="container about-container">
-            <div class="about-image">
+            <a href="#about" class="go-to-top">
+                <img src="./imgs/gototop.svg" alt="Go to top">
+            </a>
+        </section>
+        <section id="about">
+            <div class="about-bg">
+                <img src="/imgs/kv-2 1.svg" alt="background decoration" class="about-bg-1">
                 <!--merged image-->
-                <div class="profile-pic-wrapper">
-                    <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/38_1341.svg"
-                        alt="Profile background shape" class="profile-bg-shape">
-                    <div class="profile-details">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/38_1346.svg"
-                            alt="Profile illustration"
-                            style="position:absolute; top:12.5%; left:19.7%; width:60.6%; height:87.7%;">
+                <div class="about-bg-2">
+                    <img src="/imgs/section-1-bg.svg" alt="decoration" style="position:absolute; ">
+
+                </div>
+            </div>
+            <div class="container about-container">
+                <div class="about-image">
+                    <!--merged image-->
+                    <div class="profile-pic-wrapper">
+                        <img src="/imgs/me 1.svg" alt="Profile background shape" class="profile-bg-shape">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-info-box">
+                        <p>綽號叫Asagi，是日文的藍綠色！<br>性格樂觀、適應力拔群，會因為好奇心變得積極主動，<br>擅長將技能轉化為實際解方，並應用於專案需求中。</p>
+                    </div>
+                    <!--merged image-->
+                    <div class="about-icons">
+                        <img src="/imgs/icon 3.svg" alt="icon">
                     </div>
                 </div>
             </div>
-            <div class="about-content">
-                <div class="about-info-box">
-                    <p>綽號叫Asagi，是日文的藍綠色！<br>性格樂觀、適應力拔群，會因為好奇心變得積極主動，<br>擅長將技能轉化為實際解方，並應用於專案需求中。</p>
-                </div>
+        </section>
+        <section id="experience">
+            <div class="experience-bg">
                 <!--merged image-->
-                <div class="about-icons">
-                    <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/41_1239.svg" alt="icon decorations"
-                        style="width: 225px; height: 103px;">
-                </div>
+                <img src="/imgs/experience-bg.svg" alt="background decoration"
+                    style="position: absolute; top: 0; left: -150px; width: 123%; height: 104%; z-index: 0; opacity: 0.5;">
             </div>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="experience-bg">
-            <!--merged image-->
-            <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/70_3726.svg" alt="background decoration"
-                style="position: absolute; top: 0; left: -150px; width: 123%; height: 104%; z-index: 0; opacity: 0.5;">
-        </div>
-        <div class="container experience-container">
-            <div class="experience-intro">
-                <h2>我有什麼樣的經驗?</h2>
-                <p>這些經歷構成了現在的我！除了右邊這些經歷外，也歡迎聯絡我和我聊聊，可以更加瞭解我唷！</p>
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/68_3283.svg"
-                    alt="Pointing hand illustration" class="pointing-hand">
-            </div>
-            <div class="experience-cards">
-                <div class="card-column">
-                    <div class="card experience-card">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I68_3458_68_3421.svg"
-                            alt="Japan Icon" class="card-icon">
-                        <h3>日文</h3>
-                        <p>2022.04~2023.04在京都文化日本語學校經歷了紮實的日語口說練習，曾經到日本小學擔任講師介紹台灣。</p>
-                    </div>
+            <div class="container experience-container">
+                <div class="experience-intro">
+                    <h2>我有什麼樣的經驗?</h2>
+                    <p>這些經歷構成了現在的我！除了右邊這些經歷外，也歡迎聯絡我和我聊聊，可以更加瞭解我唷！</p>
+                    <img src="/imgs/yubisashi img.svg" alt="Pointing hand illustration" class="pointing-hand">
                 </div>
-                <div class="card-column">
-                    <div class="card experience-card">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I68_3450_68_3421.svg"
-                            alt="Painting Icon" class="card-icon">
-                        <h3>插畫</h3>
-                        <p>有豐富的電繪作品與經驗，過去曾受他人委託繪製賀圖與各種周邊插圖，自己亦有每年繪製賀年卡的習慣。</p>
+                <div class="experience-cards">
+                    <div class="card-column">
+                        <div class="card experience-card">
+                            <img src="/imgs/japan-icon.svg" alt="Japan Icon" class="card-icon">
+                            <h3>日文</h3>
+                            <p>2022.04~2023.04在京都文化日本語學校經歷了紮實的日語口說練習，曾經到日本小學擔任講師介紹台灣。</p>
+                        </div>
                     </div>
-                    <div class="card experience-card">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I68_3466_68_3421.svg"
-                            alt="Design Icon" class="card-icon">
-                        <h3>設計</h3>
-                        <p>擁有三年的設計工作經驗，主要工作內容為海報設計、周邊禮品設計、網頁橫幅與照片修圖等.....。</p>
+                    <div class="card-column">
+                        <div class="card experience-card">
+                            <img src="/imgs/painting-icon.svg" alt="Painting Icon" class="card-icon">
+                            <h3>插畫</h3>
+                            <p>有豐富的電繪作品與經驗，過去曾受他人委託繪製賀圖與各種周邊插圖，自己亦有每年繪製賀年卡的習慣。</p>
+                        </div>
+                        <div class="card experience-card">
+                            <img src="/imgs/design-icon.svg" alt="Design Icon" class="card-icon">
+                            <h3>設計</h3>
+                            <p>擁有三年的設計工作經驗，主要工作內容為海報設計、周邊禮品設計、網頁橫幅與照片修圖等.....。</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="work">
-        <div class="container work-container">
-            <div class="work-info">
-                <h2>插畫作品</h2>
-                <p>擅長擁有背景的完整插圖，描繪日常常見風景，希望觀者可以透過作品產生共鳴，每看一次都可以發現不同的細節與故事。</p>
-                <a href="#" class="btn">
-                    <span class="btn-text">看更多</span>
-                    <div class="btn-bg">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I70_3795_41_1203_12_1110.svg"
-                            class="btn-bg-left" alt="">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I70_3795_41_1203_12_1114.svg"
-                            class="btn-bg-mid" alt="">
-                        <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I70_3795_41_1203_12_1112.svg"
-                            class="btn-bg-right" alt="">
-                    </div>
-                </a>
+        </section>
+        <section id="contact">
+            <div class="contact-bg-wrapper">
+                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/113_2367.svg" alt="background decoration"
+                    class="contact-bg">
             </div>
-            <div class="work-slider">
-                <div class="slider-track">
-                    <div class="slide-card"
-                        style="background-image: url('/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/33db47d5907c792b17cf0c97ac16a41455e2079c.png');">
-                    </div>
-                    <div class="slide-card"
-                        style="background-image: url('/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/027f9506e00914aad74afe57c03e4edf18e5ef1d.png');">
-                    </div>
-                    <div class="slide-card"
-                        style="background-image: url('/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/ffefb048858688ee043060000248358e0e82f669.png');">
-                    </div>
+            <div class="container contact-container">
+                <div class="contact-form-wrapper">
+                    <h2>聯絡我</h2>
+                    <p>若有任何疑問與需求...或你只是想找人聊聊?<br>歡迎聯絡我。</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact-bg-wrapper">
-            <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/113_2367.svg" alt="background decoration"
-                class="contact-bg">
-        </div>
-        <div class="container contact-container">
-            <div class="contact-form-wrapper">
-                <h2>聯絡我</h2>
-                <p>若有任何疑問與需求...或你只是想找人聊聊?<br>歡迎聯絡我。</p>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">稱呼</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">信箱</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-group form-group-textarea">
-                        <label for="message">內容</label>
-                        <textarea id="message" name="message" rows="8"></textarea>
-                    </div>
-                    <div class="form-buttons">
-                        <button type="reset" class="btn">
-                            <span class="btn-text">清　空</span>
-                            <div class="btn-bg">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2112_12_1110.svg"
-                                    class="btn-bg-left" alt="">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2112_12_1114.svg"
-                                    class="btn-bg-mid" alt="">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2112_12_1112.svg"
-                                    class="btn-bg-right" alt="">
-                            </div>
-                        </button>
-                        <button type="submit" class="btn">
-                            <span class="btn-text">送　出</span>
-                            <div class="btn-bg">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2104_12_1110.svg"
-                                    class="btn-bg-left" alt="">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2104_12_1114.svg"
-                                    class="btn-bg-mid" alt="">
-                                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I110_2104_12_1112.svg"
-                                    class="btn-bg-right" alt="">
-                            </div>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <footer class="site-footer">
-            <div class="footer-bg-wrapper">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_103_2068.svg"
-                    alt="footer background" class="footer-bg">
-            </div>
-            <div class="footer-container">
-                <div class="social-icons">
-                    <a href="#"><img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_109_2106.svg"
-                            alt="Social Icon 1"></a>
-                    <a href="#"><img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_109_2099.svg"
-                            alt="Social Icon 2"></a>
-                    <a href="#"><img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_109_2103.svg"
-                            alt="Social Icon 3"></a>
-                    <a href="#"><img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_113_2120.svg"
-                            alt="Social Icon 4"></a>
+            <footer class="site-footer">
+                <div class="footer-bg-wrapper">
+                    <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_103_2068.svg"
+                        alt="footer background" class="footer-bg">
                 </div>
-                <p class="copyright">Copyright © 2025 MengChieh</p>
-            </div>
-        </footer>
-    </section>
+                <div class="footer-container">
+                    <div class="social-icons">
+                        <a href="#"><img src="/imgs/facebook.svg" alt="Social Icon 1"></a>
+                        <a href="#"><img src="/imgs/ins.svg" alt="Social Icon 2"></a>
+                        <a href="#"><img src="/imgs/plurk.svg" alt="Social Icon 3"></a>
+                        <a href="#"><img src="/imgs/mail.svg" alt="Social Icon 4"></a>
+                    </div>
+                    <p class="copyright">Copyright © 2025 MengChieh</p>
+                </div>
+            </footer>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
