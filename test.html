@@ -3,111 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Brush Reveal Canvas</title>
+    <title>SVG Hover Slow Fill to Stroke</title>
     <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: #000;
+        .custom-btn {
+            position: relative;
+            width: 127px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            font-size: 16px;
+            color: #000;
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 1;
+            overflow: visible;
         }
 
-        canvas {
-            display: block;
+
+        /* 預設底圖 */
+        .custom-btn::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transform-origin: left center;
+
+            width: 127px;
+            height: 43px;
+            background-image: url('./imgs/button/state=Default\,mode=bgwhite.svg');
+            background-repeat: no-repeat;
+            background-size: 127px 43px;
+            z-index: -1;
+        }
+
+        /* hover 換大圖 + 微調 Y 軸位置 */
+        .custom-btn:hover::after {
+            width: 183px;
+            height: 72px;
+            background-image: url('./imgs/button/state=Hover\,mode=bgwhite.svg');
+            background-size: 183px 72px;
+
+            /* 重點來了！往下移一點 */
+            transform: translateY(-50%) translateY(4px);
         }
     </style>
 </head>
 
 <body>
-    <canvas id="brushCanvas"></canvas>
+    <button class="custom-btn">點我</button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>
-        const canvas = document.getElementById("brushCanvas");
-        const ctx = canvas.getContext("2d");
 
-        // 設定全螢幕
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
 
-        // 底層圖片
-        const bg = new Image();
-        bg.src = 'https://picsum.photos/1200/800';
-        bg.onload = () => {
-            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
 
-            // 上層黑色遮罩
-            ctx.fillStyle = 'black';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            startBrushAnimation();
-        };
-
-        function startBrushAnimation() {
-            const brushCount = 6;
-            const brushes = [];
-
-            // 初始化筆刷資料
-            for (let i = 0; i < brushCount; i++) {
-                brushes.push({
-                    y: (canvas.height / brushCount) * i + (i % 2 ? 20 : -20), // 上下交錯
-                    x: -200,  // 從左邊外開始
-                    width: 200 + Math.random() * 100,  // 每條筆刷寬度稍微不同
-                    height: canvas.height / brushCount + Math.random() * 20,
-                    speed: 1.2 + Math.random() * 0.3
-                });
-            }
-
-            // GSAP 動畫
-            brushes.forEach((brush, i) => {
-                gsap.to(brush, {
-                    x: canvas.width + 200,
-                    duration: 1.2,
-                    delay: i * 0.2,
-                    ease: "power2.inOut",
-                    onUpdate: () => drawBrushes(brushes)
-                });
-            });
-        }
-
-        function drawBrushes(brushes) {
-            // 先畫底圖
-            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
-
-            // 再畫黑色遮罩
-            ctx.fillStyle = 'black';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            // 設定混合模式為 destination-out => 擦掉遮罩
-            ctx.globalCompositeOperation = 'destination-out';
-
-            brushes.forEach(brush => {
-                // 模擬筆刷形狀
-                const gradient = ctx.createRadialGradient(
-                    brush.x + brush.width / 2, brush.y + brush.height / 2, 0,
-                    brush.x + brush.width / 2, brush.y + brush.height / 2, brush.width / 2
-                );
-                gradient.addColorStop(0, 'rgba(0,0,0,1)');
-                gradient.addColorStop(1, 'rgba(0,0,0,0)');
-                ctx.fillStyle = gradient;
-
-                ctx.fillRect(brush.x, brush.y, brush.width, brush.height);
-            });
-
-            // 還原混合模式
-            ctx.globalCompositeOperation = 'source-over';
-        }
-
-        // 窗口大小改變自動調整
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = 'black';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-        });
-    </script>
 </body>
 
 </html>

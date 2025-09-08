@@ -12,17 +12,25 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./imgs/logo.svg" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo">
+                        <img src="imgs/state=Default.svg" class="img img-a">
+                        <img src="imgs/state=Hover.svg" class="img img-b">
+                    </div>
+                </a>
+                <button class="custom-toggler" type="button" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                            <a class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience">Experience</a>
@@ -30,158 +38,148 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#work">Work</a>
                         </li>
-                                                <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- <header class="site-header">
-        <div class="navbar">
-            <a href="#" class="logo">
-                <img src="./imgs/logo.svg" alt="Logo">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    </header>
+    <section id="title">
+        <div class="hero-title">
+            <img src="./imgs/bg-m.svg" alt="background" class="mobile-bg">
+            <img src="./imgs/kv-bg.svg" alt="background" class="pc-bg animate-on-load">
         </div>
-    </header> -->
-        <section id="title">
-            <div class="hero-title">
-                <img src="./imgs/bg-m.svg" alt="background" class="mobile-bg">
-                <img src="./imgs/kv-bg.svg" alt="background" class="pc-bg">
+
+    </section> <a href=" #about" class="go-to-top">
+        <img src="./imgs/gototop.svg" alt="Go to top">
+    </a>
+    <section id="about">
+        <div class="about-bg">
+            <img src="/imgs/kv-2 1.svg" alt="background decoration" class="about-bg-1">
+            <div class="about-bg-2">
+                <img src="/imgs/section-1-bg.svg" alt="decoration" style="position:absolute; ">
+
             </div>
-            <a href="#about" class="go-to-top">
-                <img src="./imgs/gototop.svg" alt="Go to top">
-            </a>
-        </section>
-        <section id="about">
-            <div class="about-bg">
-                <img src="/imgs/kv-2 1.svg" alt="background decoration" class="about-bg-1">
-                <!--merged image-->
-                <div class="about-bg-2">
-                    <img src="/imgs/section-1-bg.svg" alt="decoration" style="position:absolute; ">
+        </div>
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="profile-pic-wrapper">
+                    <img src="/imgs/me 1.svg" alt="Profile background shape" class="profile-bg-shape">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-info-box">
+                    <p>綽號叫Asagi，是日文的藍綠色！<br>性格樂觀、適應力拔群，有源源不絕的好奇心驅使自己主動學習與行動，擅長將技能轉化為實際解方，並應用於專案需求中。</p>
 
                 </div>
-            </div>
-            <div class="container about-container">
-                <div class="about-image">
-                    <!--merged image-->
-                    <div class="profile-pic-wrapper">
-                        <img src="/imgs/me 1.svg" alt="Profile background shape" class="profile-bg-shape">
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="about-info-box">
-                        <p>綽號叫Asagi，是日文的藍綠色！<br>性格樂觀、適應力拔群，會因為好奇心變得積極主動，<br>擅長將技能轉化為實際解方，並應用於專案需求中。</p>
-                        <div><a>view more</a></div>
-                    </div>
-                    <div class="about-icons">
-                        <img src="/imgs/icon 3.svg" alt="icon">
-                    </div>
+                <div class="about-icons">
+                    <img src="/imgs/icon 3.svg" alt="icon">
+                    <div class="more custom-btn"><a>view more</a></div>
                 </div>
             </div>
-        </section>
-        <section id="experience">
-            <div class="experience-bg">
-                <!--merged image-->
-                <img src="/imgs/experience-bg.svg" alt="background decoration"
-                    style="position: absolute; top: 0; left: -150px; width: 123%; height: 104%; z-index: 0; opacity: 0.5;">
+        </div>
+    </section>
+    <section id="experience">
+        <div class="experience-bg">
+            <img src="/imgs/experience-bg.svg" alt="background decoration"
+                style="position: absolute; top: 0; left: -150px; width: 123%; height: 104%; z-index: 0; opacity: 0.5;">
+        </div>
+        <div class="container experience-container">
+            <div class="experience-intro">
+                <h2>我有什麼樣的經驗?</h2>
+                <p>這些經歷構成了現在的我！</p>
+                <img src="/imgs/yubisashi img.svg" alt="Pointing hand illustration" class="pointing-hand">
             </div>
-            <div class="container experience-container">
-                <div class="experience-intro">
-                    <h2>我有什麼樣的經驗?</h2>
-                    <p>這些經歷構成了現在的我！</p>
-                    <img src="/imgs/yubisashi img.svg" alt="Pointing hand illustration" class="pointing-hand">
-                </div>
-                <div class="experience-cards">
-                    <div class="card-column">
-                        <div class="card experience-card">
-                            <img src="/imgs/japan-icon.svg" alt="Japan Icon" class="card-icon">
-                            <h3>日文</h3>
-                            <p>2022.04~2023.04在京都文化日本語學校經歷了紮實的日語口說練習，曾經到日本小學擔任講師介紹台灣。</p>
-                        </div>
+            <div class="experience-cards">
+                <div class="card-column">
+                    <div class="card experience-card">
+                        <img src="/imgs/japan-icon.svg" alt="Japan Icon" class="card-icon">
+                        <h3>日文</h3>
+                        <p>2022.04~2023.04在京都文化日本語學校經歷了紮實的日語口說練習，曾經到日本小學擔任講師介紹台灣。</p>
                     </div>
-                    <div class="card-column">
-                        <div class="card experience-card">
-                            <img src="/imgs/painting-icon.svg" alt="Painting Icon" class="card-icon">
-                            <h3>插畫</h3>
-                            <p>有豐富的電繪作品與經驗，過去曾受他人委託繪製賀圖與各種周邊插圖，自己亦有每年繪製賀年卡的習慣。</p>
-                        </div>
-                        <div class="card experience-card">
-                            <img src="/imgs/design-icon.svg" alt="Design Icon" class="card-icon">
-                            <h3>設計</h3>
-                            <p>擁有三年的設計工作經驗，主要工作內容為海報設計、周邊禮品設計、網頁橫幅與照片修圖等.....。</p>
-                        </div>
+                </div>
+                <div class="card-column">
+                    <div class="card experience-card">
+                        <img src="/imgs/painting-icon.svg" alt="Painting Icon" class="card-icon">
+                        <h3>插畫</h3>
+                        <p>有豐富的電繪作品與經驗，過去曾受他人委託繪製賀圖與各種周邊插圖，自己亦有每年繪製賀年卡的習慣。</p>
+                    </div>
+                    <div class="card experience-card">
+                        <img src="/imgs/design-icon.svg" alt="Design Icon" class="card-icon">
+                        <h3>設計</h3>
+                        <p>擁有三年的設計工作經驗，主要工作內容為海報設計、周邊禮品設計、網頁橫幅與照片修圖等.....。</p>
                     </div>
                 </div>
             </div>
-        </section>
-        </section>
-                <section id="design">
+        </div>
+    </section>
+    <section id="work">
+        <div id="design">
             <div class="title">做做設計</div>
             <div class="container-design"></div>
             <div>
-                <div class="introduce"></div>
-                <div><a>view more</a></div>
+                <div class="introduce">
+                    <p>過去工作為平面設計，後來學了網頁設計與UIUX專業知識，致力於用能力與設計解決問題！</p>
+                </div>
+                <div class="more"><a>view more</a></div>
             </div>
-        </section>
-                <section id="draw">
+        </div>
+        <div id="draw">
             <div class="title">畫畫圖片</div>
             <div class="container-draw"></div>
             <div>
-                <div class="introduce"><p>
-                </p></div>
-                <div><a>view more</a></div>
+                <div class="introduce">
+                    <p>喜歡利用色塊與顏色繪製具有故事性的電繪插圖。除了每年主題賀年卡外、亦有喜帖委託插圖與繪本作品。</p>
+                </div>
+                <div class="more"><a>view more</a></div>
             </div>
-        </section>
-<section id="japanese">
+        </div>
+        <div id="japanese">
             <div class="title">說說日文</div>
             <div class="container-jp"></div>
             <div>
-                <div class="introduce">2022年JLPT N1合格，靠著興趣學習日文並於考到N2後決定加強日文口說能力，出發前往京都，學習期間有寫了一些日文文章，如果有興趣歡迎點進入觀看。<p>
-
-                </p></div>
-                <div><a>view more</a></div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="contact-bg-wrapper">
-                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/113_2367.svg" alt="background decoration"
-                    class="contact-bg">
-            </div>
-            <div class="container contact-container">
-                <div class="contact-form-wrapper">
-                    <h2>聯絡我</h2>
-                    <p>若有任何疑問與需求...或你只是想找人聊聊?<br>歡迎聯絡我。</p>
+                <div class="introduce">
+                    <p>
+                        2022年JLPT N1合格，靠著興趣學習日文並於考到N2後決定加強日文口說能力，出發前往京都，學習期間有寫了一些日文文章，如果有興趣歡迎點進入觀看。
+                    </p>
                 </div>
+                <div class="more"><a>view more</a></div>
             </div>
-            <footer class="site-footer">
-                <div class="footer-bg-wrapper">
-                    <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_103_2068.svg"
-                        alt="footer background" class="footer-bg">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-bg-wrapper">
+            <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/113_2367.svg" alt="background decoration"
+                class="contact-bg">
+        </div>
+        <div class="container contact-container">
+            <div class="contact-form-wrapper">
+                <h2>聯絡我</h2>
+                <p>若有任何疑問與需求...或你只是想找人聊聊?<br>歡迎聯絡我。</p>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-bg-wrapper">
+                <img src="/page/b9b00944-3b0f-4a3c-b322-ae37e0979d50/images/I109_2110_103_2068.svg"
+                    alt="footer background" class="footer-bg">
+            </div>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="#"><img src="/imgs/facebook.svg" alt="Social Icon 1"></a>
+                    <a href="#"><img src="/imgs/ins.svg" alt="Social Icon 2"></a>
+                    <a href="#"><img src="/imgs/plurk.svg" alt="Social Icon 3"></a>
+                    <a href="#"><img src="/imgs/mail.svg" alt="Social Icon 4"></a>
                 </div>
-                <div class="footer-container">
-                    <div class="social-icons">
-                        <a href="#"><img src="/imgs/facebook.svg" alt="Social Icon 1"></a>
-                        <a href="#"><img src="/imgs/ins.svg" alt="Social Icon 2"></a>
-                        <a href="#"><img src="/imgs/plurk.svg" alt="Social Icon 3"></a>
-                        <a href="#"><img src="/imgs/mail.svg" alt="Social Icon 4"></a>
-                    </div>
-                    <p class="copyright">Copyright © 2025 MengChieh</p>
-                </div>
-            </footer>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+                <p class="copyright">Copyright © 2025 MengChieh</p>
+            </div>
+        </footer>
+    </section>
+    <script src="/JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+ .custom-btn {
+     position: relative;
+     width: 127px;
+     height: 43px;
+     line-height: 43px;
+     text-align: center;
+     font-size: 16px;
+     color: #000;
+     border: none;
+     background: none;
+     cursor: pointer;
+     z-index: 1;
+     overflow: visible;
+ }
+
+
+ /* 預設底圖 */
+ .custom-btn::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     transform-origin: left center;
+
+     width: 127px;
+     height: 43px;
+     background-image: url('./imgs/button/state=Default\,mode=bgwhite.svg');
+     background-repeat: no-repeat;
+     background-size: 127px 43px;
+     z-index: -1;
+ }
+
+ /* hover 換大圖 + 微調 Y 軸位置 */
+ .custom-btn:hover::after {
+     width: 183px;
+     height: 72px;
+     background-image: url('./imgs/button/state=Hover\,mode=bgwhite.svg');
+     background-size: 183px 72px;
+
+     /* 重點來了！往下移一點 */
+     transform: translateY(-50%) translateY(4px);
+ }
