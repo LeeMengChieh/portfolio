@@ -30,7 +30,7 @@ section {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
     z-index: 2;
     padding-left: 16px;
@@ -38,19 +38,11 @@ section {
 }
 
 /* ===========================================================================navbar */
-.header,
-.custom-navbar,
-.navbar {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
 
 .header {
     position: fixed;
     left: 0;
     right: 0;
-    width: 100vw;
     border-bottom: 1px solid #E9832A;
     background: #F5CD52;
     z-index: 10;
@@ -217,9 +209,13 @@ section {
 
 }
 
+.bg-animation {
+    display: none;
+}
+
 .mobile-bg {
     display: block;
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 
@@ -319,7 +315,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 0 64px;
 }
@@ -366,7 +361,6 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1440px;
 }
 
 .hero-content {
@@ -434,12 +428,15 @@ section {
 }
 
 /* ======================================================================================About me */
+#about .container {
+    margin-bottom: 80px;
+}
+
 #about {
     background-color: var(--color-white);
     display: flex;
     align-items: center;
     position: relative;
-    /* 新增，讓絕對定位背景不影響內容 */
     padding-bottom: 40px;
     height: auto;
 }
@@ -456,32 +453,6 @@ section {
     display: none;
 }
 
-/* .about-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-} */
-
-/* .about-bg-1 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1562px;
-    height: 422px;
-} */
-/* 
-.about-bg-2 {
-    position: absolute;
-    top: -80px;
-    left: -120px;
-    width: 1659px;
-    height: 1005px;
-} */
 
 .about-container {
     top: 80px;
@@ -491,7 +462,6 @@ section {
     justify-content: center;
     gap: 40px;
     flex-direction: column;
-    /* text-align: center; */
 }
 
 
@@ -550,13 +520,31 @@ section {
     text-align: center;
 }
 
-.more a {
+.more.custom-btn a {
     color: var(--color-accent) !important;
     border-bottom: #299ea7;
     font-size: 18px;
-    text-decoration: underline;
     cursor: pointer;
-    background: none;
+    display: inline-flex;
+    /* 讓文字和 icon 可以水平排列 */
+    align-items: center;
+    /* 垂直置中 */
+    gap: 8px;
+    /* 文字和 icon 之間的間距 */
+}
+
+
+.more.custom-btn a span {
+    border-bottom: 1px solid currentColor;
+    /* 底線 */
+    padding-bottom: 4px;
+    /* 距離文字 4px */
+    display: inline-block;
+}
+
+.more.custom-btn a:hover span,
+.more.custom-btn a:hover i {
+    color: #e9562a;
 }
 
 /* ==========================================================================experience */
@@ -823,6 +811,11 @@ section {
         max-width: 1200px;
     }
 
+    .header-container {
+        max-width: 1200px;
+    }
+
+
     /* ======================================================================================Navbar */
     .custom-navbar .nav-link::after {
         color: #e9562a;
@@ -855,6 +848,50 @@ section {
     }
 
     /* ====================================================================banner */
+
+    .banner {
+        width: 1200px;
+        height: 717px;
+        position: relative;
+
+        svg {
+            position: absolute;
+            left: 0;
+            right: 0;
+
+            &.hide {
+                display: none;
+            }
+        }
+
+        .real {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+            img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+
+    .bg-animation {
+        display: block;
+        max-width: 1200px;
+    }
+
+    .hero-container {
+        max-width: 1200px;
+    }
+
     .mobile-bg {
         display: none;
         /* 隱藏手機圖 */
@@ -864,7 +901,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 100vh; */
+        margin: 20px
     }
 
     .mobile-bg {
@@ -873,7 +910,6 @@ section {
 
     .pc-bg {
         display: block;
-        width: 90%;
         max-width: 1200px;
         object-fit: contain;
     }
