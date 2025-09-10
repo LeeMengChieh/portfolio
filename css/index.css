@@ -1,4 +1,5 @@
 /* ==============================================================================手機板 */
+
 :root {
     --color-primary: #f5cd53;
     --color-secondary: #e9562a;
@@ -218,7 +219,7 @@ section {
 
 .mobile-bg {
     display: block;
-    width: 100%;
+    width: 100%; 
     height: auto;
 }
 
@@ -242,7 +243,6 @@ section {
 }
 
 .page-wrapper {
-    max-width: 1440px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -376,16 +376,7 @@ section {
     height: 100%;
 }
 
-.hero-title-wrapper {
-    position: relative;
-    width: 518px;
-    height: 446px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 110px;
-    margin-left: 100px;
-}
+
 
 .hero-title-bg {
     position: absolute;
@@ -403,7 +394,7 @@ section {
     line-height: 90px;
     text-align: left;
     margin: 0;
-    width: 401px;
+    width: 100%;
 }
 
 .hero-illustrations {
@@ -575,7 +566,7 @@ section {
     align-items: center;
 }
 
-.experience-bg {
+/* .experience-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -609,12 +600,11 @@ section {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 32px;
-    max-width: 308px;
+    max-width: 100%;
 }
 
 .pointing-hand {
-    width: 401px;
-    height: 328px;
+    width: 50%;
 }
 
 .experience-cards {
@@ -627,7 +617,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 292px;
+    width: 80%;
 }
 
 .card-column:first-child {
@@ -664,9 +654,9 @@ section {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-}
+} */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .experience-container {
         flex-direction: column;
     }
@@ -687,7 +677,7 @@ section {
         width: 100%;
         max-width: 400px;
     }
-}
+} */
 
 /* CSS from section:work */
 #work {
@@ -707,7 +697,7 @@ section {
 
 .work-info {
     flex: 1;
-    max-width: 308px;
+    max-width: 80%;
 }
 
 .work-info h2 {
@@ -737,15 +727,14 @@ section {
 }
 
 .slide-card {
-    width: 500px;
-    height: 484px;
+    width: 100%;
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .work-container {
         flex-direction: column;
     }
@@ -759,12 +748,11 @@ section {
         width: 100%;
         overflow-x: auto;
     }
-}
+} */
 
 /* CSS from section:contact */
 #contact {
     background-color: var(--color-white);
-    min-height: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -776,86 +764,12 @@ section {
     position: absolute;
     top: -258px;
     left: -175px;
-    width: 1999px;
-    height: 1137px;
     z-index: 0;
 }
 
 .contact-container {
     padding-top: 80px;
     padding-bottom: 80px;
-}
-
-.contact-form-wrapper {
-    text-align: center;
-    max-width: 696px;
-    margin: 0 auto;
-}
-
-.contact-form-wrapper h2 {
-    color: var(--color-accent);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 64px;
-    margin: 0 0 16px;
-}
-
-.contact-form-wrapper p {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 48px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.form-group-textarea {
-    align-items: flex-start;
-}
-
-.form-group label {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 24px;
-    flex-basis: 44px;
-    flex-shrink: 0;
-    text-align: center;
-}
-
-.form-group input,
-.form-group textarea {
-    flex-grow: 1;
-    border: 1px solid var(--color-accent);
-    background-color: var(--color-light-green);
-    border-radius: 20px;
-    padding: 12px 20px;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    font-size: 16px;
-}
-
-.form-group input {
-    height: 50px;
-}
-
-.form-group textarea {
-    height: 300px;
-    resize: vertical;
-}
-
-.form-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 32px;
 }
 
 .site-footer {
@@ -880,7 +794,6 @@ section {
 }
 
 .footer-container {
-    max-width: 1440px;
     margin: 0 auto;
     padding: 48px 64px;
     display: flex;
@@ -890,7 +803,6 @@ section {
 
 .social-icons {
     display: flex;
-    gap: 32px;
 }
 
 .social-icons img {
