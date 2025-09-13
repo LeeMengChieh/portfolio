@@ -290,24 +290,6 @@ section {
     flex-grow: 1;
 }
 
-.go-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    width: 68px;
-    height: 68px;
-}
-
-
-/* @media (max-width: 768px) {
-    .go-to-top {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-    }
-} */
 
 .site-header {
     position: absolute;
@@ -440,6 +422,18 @@ section {
     margin-top: 40px;
 }
 
+.go-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 100;
+}
+
+.go-to-top img {
+    width: 40px;
+
+}
+
 #about {
     background-color: var(--color-white);
     display: flex;
@@ -451,10 +445,11 @@ section {
 
 .about-bg-1 {
     position: absolute;
-    top: -10px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
+    display: block;
 }
 
 
@@ -566,54 +561,43 @@ section {
     background-color: var(--color-white);
     display: flex;
     align-items: center;
+    padding-bottom: 80px;
 }
 
-/* .experience-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-}
 
 .experience-container {
     display: flex;
-    gap: 64px;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
+}
+
+
+.yubisashi {
+    display: none;
 }
 
 .experience-intro {
     flex: 1;
-    padding-left: 80px;
 }
+
 
 .experience-intro h2 {
     color: var(--color-accent);
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 48px;
-    margin: 0 0 16px;
-}
-
-.experience-intro p {
-    color: var(--color-accent);
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 32px;
-    max-width: 100%;
-}
-
-.pointing-hand {
-    width: 50%;
+    margin: auto;
 }
 
 .experience-cards {
-    flex: 1.5;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
 }
+
 
 .card-column {
     display: flex;
@@ -622,13 +606,6 @@ section {
     width: 80%;
 }
 
-.card-column:first-child {
-    margin-top: -150px;
-}
-
-.card-column:last-child {
-    margin-top: -32px;
-}
 
 .card {
     background-color: var(--color-white);
@@ -638,10 +615,12 @@ section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+
 .card-icon {
     height: 100px;
     margin-bottom: 32px;
 }
+
 
 .card h3 {
     color: var(--color-secondary);
@@ -651,35 +630,13 @@ section {
     margin: 0 0 16px;
 }
 
+
 .card p {
     color: var(--color-secondary);
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-} */
-
-/* @media (max-width: 1024px) {
-    .experience-container {
-        flex-direction: column;
-    }
-
-    .experience-intro {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .experience-cards {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .card-column {
-        margin: 0 !important;
-        width: 100%;
-        max-width: 400px;
-    }
-} */
+}
 
 /* CSS from section:work */
 #work {
@@ -928,6 +885,17 @@ section {
     }
 
     /* ====================================================================AboutMe */
+    .go-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 80px;
+        z-index: 100;
+    }
+
+    .go-to-top img {
+        width: 80px;
+
+    }
 
     #about .container {
         padding-top: 150px;
@@ -964,4 +932,57 @@ section {
     .about-icons img {
         width: 80%;
     }
+
+    /*========================================================================expericence*/
+
+    #experience {
+        background-color: var(--color-white);
+        display: flex;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .experience-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .experience-cards {
+        display: flex;
+        flex-direction: row;
+        /* 假設你希望圖片在左、文字在右 */
+        align-items: stretch;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .experience-cards>div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* 圖片靠最下方 */
+    }
+
+    .yubisashi {
+        display: block;
+        width: 200px;
+    }
+
+    .card-column {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        width: 80%;
+    }
+
 }
