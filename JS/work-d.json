@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "海洋主題環保袋",
+        "category": "插畫",
+        "image": "img/ocean-bag.jpg",
+        "description": "以海洋為主題，結合插畫與環保概念所設計的袋子。",
+        "date": "2024-05"
+    },
+    {
+        "id": 2,
+        "title": "日式小店 LOGO 設計",
+        "category": "設計",
+        "image": "img/logo.jpg",
+        "description": "為一間日式雜貨小店設計的品牌識別 LOGO。",
+        "date": "2024-03"
+    }
+]
