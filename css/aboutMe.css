@@ -49,6 +49,7 @@ a {
   font-weight: normal;
 }
 p {
+  color: var(--color-text);
   margin: 0;
 }
 .go-to-top {
@@ -288,6 +289,36 @@ body {
 }
 
 /* ==========================================================================experience */
+
+#experience {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+#experience .work-experience .work1-title p {
+  color: var(--color-accent);
+  font-size: 18px;
+  line-height: 36px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.work1-text li {
+  padding-bottom: 20px;
+  color: #299ea7;
+}
+
+.work1-text ol {
+  padding-left: 12px;
+}
+.work1-text p {
+  font-size: 16px;
+  line-height: 32px;
+}
+.work1-t {
+  color: var(--color-accent);
+  font-weight: 500;
+}
 /* ==========================================================================contact */
 #contact {
   background-color: var(--color-white);
@@ -439,7 +470,7 @@ body {
   .slogan-desktop p {
     padding-left: 32px;
     font-size: 36px;
-    padding-bottom: 28px;
+    padding-bottom: px;
     font-weight: 400;
   }
 
@@ -486,6 +517,7 @@ body {
   .slogan-m {
     display: none;
   }
+
   /*========================================================================contact*/
 
   .contact-container {
