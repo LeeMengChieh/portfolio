@@ -307,7 +307,10 @@ body {
   padding-bottom: 20px;
   color: #299ea7;
 }
-
+.work1-text ul {
+  padding-left: 12px;
+  list-style: none;
+}
 .work1-text ol {
   padding-left: 12px;
 }
@@ -318,6 +321,17 @@ body {
 .work1-t {
   color: var(--color-accent);
   font-weight: 500;
+}
+/* ======================================================================================autobiography */
+#autobiography {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 32px;
+  padding-bottom: 20px;
 }
 /* ==========================================================================contact */
 #contact {
