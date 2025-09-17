@@ -4,7 +4,7 @@
   --color-secondary: #e9562a;
   --color-accent: #299ea7;
   --color-light-green: #6fe9b8;
-  --color-white: #ffffff;
+  --color-white: #f3f2e4;
   --color-text: #333;
 }
 
@@ -325,13 +325,22 @@ body {
 /* ======================================================================================autobiography */
 #autobiography {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 
 .container p {
   font-size: 16px;
   line-height: 32px;
   padding-bottom: 20px;
+}
+
+.container .work1-t {
+  padding-bottom: 0px;
+}
+
+.container ul {
+  padding-left: 0px;
+  list-style: none;
 }
 /* ==========================================================================contact */
 #contact {
