@@ -48,10 +48,12 @@ a {
   color: inherit;
   font-weight: normal;
 }
+
 p {
   color: var(--color-text);
   margin: 0;
 }
+
 .go-to-top {
   position: fixed;
   bottom: 30px;
@@ -109,7 +111,7 @@ body {
   opacity: 0;
 }
 
-.logo > a {
+.logo>a {
   display: block;
   width: 100%;
   height: 100%;
@@ -253,9 +255,11 @@ body {
   height: auto;
   display: block;
 }
+
 .text-wrapper .slogan-desktop {
   display: none;
 }
+
 #about .slogan {
   padding: 8px;
   border-top: 1px solid #333;
@@ -268,9 +272,11 @@ body {
   color: var(--color-text);
   font-size: 20px;
 }
+
 .slogan-desktop {
   display: none;
 }
+
 #about .slogan p:nth-child(1) {
   margin: 0;
 }
@@ -280,7 +286,22 @@ body {
   margin: 0;
 }
 
+#about .introduce p {
+
+  margin-bottom: 32px;
+
+}
+
+#about .introduce img {
+  width: 60%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
 #about .introduce {
+  position: relative;
+  width: 100%;
   line-height: 32px;
   margin-top: 80px;
   margin-bottom: 60px;
@@ -307,21 +328,26 @@ body {
   padding-bottom: 20px;
   color: #299ea7;
 }
+
 .work1-text ul {
   padding-left: 12px;
   list-style: none;
 }
+
 .work1-text ol {
   padding-left: 12px;
 }
+
 .work1-text p {
   font-size: 16px;
   line-height: 32px;
 }
+
 .work1-t {
   color: var(--color-accent);
   font-weight: 500;
 }
+
 /* ======================================================================================autobiography */
 #autobiography {
   position: relative;
@@ -342,6 +368,7 @@ body {
   padding-left: 0px;
   list-style: none;
 }
+
 /* ==========================================================================contact */
 #contact {
   background-color: var(--color-white);
@@ -415,7 +442,10 @@ body {
   body {
     margin: auto;
     max-width: 1200px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .header-container {
@@ -437,8 +467,7 @@ body {
   .custom-navbar .nav-link::after {
     color: #e9562a;
     background-color: none;
-    background: url("../imgs/navbar-border-button-hover.svg") no-repeat
-      left/contain;
+    background: url("../imgs/navbar-border-button-hover.svg") no-repeat left/contain;
   }
 
   .custom-navbar .nav-link:hover {
@@ -462,15 +491,17 @@ body {
     transform: scale(0.8);
     margin-left: 0;
   }
+
   /* ======================================================================================about */
+
 
   #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
     gap: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
     padding-bottom: 80px;
   }
 
@@ -484,12 +515,14 @@ body {
     max-width: 100%;
     height: auto;
   }
+
   .slogan-desktop {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .slogan-desktop p {
     padding-left: 32px;
     font-size: 36px;
@@ -505,9 +538,11 @@ body {
     font-size: 16px;
     line-height: 32px;
   }
+
   .slogan-m {
     display: none;
   }
+
   #about .slogan {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -525,6 +560,7 @@ body {
   #about .introduce {
     display: none;
   }
+
   #about .photo {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -532,6 +568,7 @@ body {
     align-items: center;
     justify-content: flex-end;
   }
+
   #about .photo img {
     max-width: 100%;
     height: auto;
@@ -539,6 +576,31 @@ body {
 
   .slogan-m {
     display: none;
+  }
+
+  .slogan-desktop img {
+    padding-top: 40px;
+    width: 50%;
+    margin: auto;
+  }
+
+  /*========================================================================experience*/
+  .work1-title {
+    padding-left: 200px;
+  }
+
+  .work1-text ul {
+    padding-left: 200px;
+  }
+
+  .work1-text ol {
+    padding-left: 200px;
+  }
+
+  /* ======================================================================================autobiography */
+
+  .container ul {
+    padding-left: 180px;
   }
 
   /*========================================================================contact*/
