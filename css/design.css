@@ -69,6 +69,7 @@ body {
   background-color: var(--color-white);
   padding: 20px;
 }
+
 .more {
   display: block;
   margin-top: 16px;
@@ -138,7 +139,7 @@ body {
   opacity: 0;
 }
 
-.logo > a {
+.logo>a {
   display: block;
   width: 100%;
   height: 100%;
@@ -274,18 +275,29 @@ body {
 }
 
 .design-img img {
-  display: none;
-  width: 48%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.design-img img:nth-child(2),
-.design-img img:nth-child(3) {
-  display: block;
+.website-work {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-#work > div {
+.website-work>div {
+  width: 100%;
+}
+
+.website-work .title {
+  margin-bottom: 8px;
+  color: var(--color-accent);
+  font-size: 18px;
+}
+
+#work>div {
   margin-bottom: 40px;
   padding-bottom: 30px;
 }
@@ -320,7 +332,6 @@ body {
 
 #work .more {
   display: flex;
-  justify-content: right;
   align-items: center;
 }
 
@@ -399,8 +410,6 @@ body {
     max-width: 1200px;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 
   .header-container {
@@ -422,8 +431,7 @@ body {
   .custom-navbar .nav-link::after {
     color: #e9562a;
     background-color: none;
-    background: url("../imgs/navbar-border-button-hover.svg") no-repeat
-      left/contain;
+    background: url("../imgs/navbar-border-button-hover.svg") no-repeat left/contain;
   }
 
   .custom-navbar .nav-link:hover {
@@ -448,6 +456,23 @@ body {
     margin-left: 0;
   }
 
+  /* ======================================================================================work */
+  .website-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .website-work>div {
+    width: calc(33.333% - 16px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
   /* ======================================================================================about */
 
   .design {
@@ -466,7 +491,6 @@ body {
 
   .design-img img {
     display: block;
-    width: 30%;
     gap: 20px;
   }
 
@@ -524,4 +548,5 @@ body {
     align-items: center;
     padding: 30px;
   }
+
 }
