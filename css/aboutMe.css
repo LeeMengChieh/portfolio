@@ -380,6 +380,28 @@ body {
 }
 
 #contact .contact-container .design .title {
+  font-size: 24px;
+  color: var(--color-accent);
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.introduce p {
+  color: var(--color-accent);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.social-icons img {
+  height: 50px;
+  margin: 12px;
+}
+
+#contact .contact-container .design .title {
   display: flex;
   font-weight: 500;
   justify-content: center;

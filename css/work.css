@@ -111,7 +111,7 @@ body {
   opacity: 0;
 }
 
-.logo > a {
+.logo>a {
   display: block;
   width: 100%;
   height: 100%;
@@ -232,61 +232,19 @@ body {
 
 /* ==========================================================================work */
 
+/* ---------- 整個 work 區塊 ---------- */
 #work {
   padding: 40px 20px;
   background: var(--color-white);
 }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 12px 24px;
-  margin-top: 24px;
-}
-
-.label {
-  font-weight: bold;
-  color: teal;
-}
-
-.text {
-  line-height: 1.6;
-}
-.images {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-.website-work .title {
-  margin-bottom: 8px;
-  color: var(--color-accent);
-  font-size: 18px;
-}
-
-#work > div {
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-}
-
-.title {
+#work .title {
   color: var(--color-accent);
   font-size: 24px;
-}
-.introduce p {
-  color: var(--color-accent);
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 16px;
-}
-.portfolio-page {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-bottom: 16px;
 }
 
+/* ---------- 圖片 ---------- */
 .portfolio-page .images {
   display: flex;
   flex-direction: column;
@@ -302,23 +260,116 @@ body {
   object-fit: cover;
 }
 
-.btn-back {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #eee;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-  margin: 0 8px;
-}
-
-.portfolio-page .description,
-.portfolio-page .links {
+/* ---------- 作品描述 ---------- */
+.portfolio-page .description {
   text-align: left;
   margin: 16px auto;
   font-size: 16px;
   line-height: 32px;
 }
+
+/* ---------- 連結置中，hover 變橘 ---------- */
+.links {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.links a {
+  color: var(--color-accent);
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* icon 與文字間距 */
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  text-decoration: none;
+  margin: 0 8px;
+  /* 左右間距 */
+}
+
+.links a span {
+  display: inline-block;
+}
+
+.links a:hover {
+  color: #e9562a;
+  /* 文字變橘色 */
+  border-bottom-color: #e9562a;
+  /* 底線變橘色 */
+}
+
+/* ---------- info-grid ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  row-gap: 32px;
+  /* 情況~結果區塊上下間距 */
+  column-gap: 12px;
+  /* label 與文字間距 */
+  margin-top: 24px;
+}
+
+.label {
+  font-weight: bold;
+  color: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label .icon {
+  padding: 8px;
+  width: 45px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.text ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.text ul li {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* ---------- nav-buttons ---------- */
+.nav-buttons {
+  margin-top: 32px;
+  /* 結果與按鈕間距 */
+  text-align: center;
+  /* 按鈕置中 */
+}
+
+.nav-buttons button,
+.nav-buttons .btn-back {
+  color: var(--color-accent);
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  margin: 0 8px;
+  /* 按鈕間距 */
+}
+
+.nav-buttons button:hover,
+.nav-buttons .btn-back:hover {
+  color: #e9562a;
+}
+
 /* ==========================================================================contact */
 #contact {
   background-color: var(--color-white);
@@ -327,6 +378,28 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+#contact .contact-container .design .title {
+  font-size: 24px;
+  color: var(--color-accent);
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.introduce p {
+  color: var(--color-accent);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.social-icons img {
+  height: 50px;
+  margin: 12px;
 }
 
 #contact .contact-container .design .title {
@@ -383,6 +456,8 @@ body {
   padding: 30px;
 }
 
+
+
 /* ===========================================================================電腦版 */
 @media (min-width: 768px) {
   .container {
@@ -415,8 +490,7 @@ body {
   .custom-navbar .nav-link::after {
     color: #e9562a;
     background-color: none;
-    background: url("../imgs/navbar-border-button-hover.svg") no-repeat
-      left/contain;
+    background: url("../imgs/navbar-border-button-hover.svg") no-repeat left/contain;
   }
 
   .custom-navbar .nav-link:hover {
@@ -449,7 +523,7 @@ body {
     gap: 24px;
   }
 
-  .website-work > div {
+  .website-work>div {
     width: calc(33.333% - 16px);
     box-sizing: border-box;
     display: flex;
@@ -458,6 +532,13 @@ body {
   }
 
   /* ======================================================================================work */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    row-gap: 32px;
+    column-gap: 12px;
+    margin-top: 24px;
+  }
 
   .design {
     margin: auto;
@@ -488,6 +569,7 @@ body {
     line-height: 1.8;
     margin-bottom: 16px;
   }
+
   .portfolio-page .images {
     flex-direction: row;
     justify-content: center;
@@ -500,8 +582,7 @@ body {
   }
 
   /* 讓描述和連結文字置中 */
-  .portfolio-page .description,
-  .portfolio-page .links {
+  .portfolio-page .description {
     text-align: left;
     margin: 16px auto;
     font-size: 16px;

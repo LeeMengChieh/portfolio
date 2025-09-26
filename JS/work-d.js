@@ -29,6 +29,8 @@ fetch("./JS/work-d.json")
 function renderProject(index) {
   const project = projects[index];
 
+  document.querySelector(".title").textContent = project.title;
+
   // 圖片與描述
   document.getElementById("img1").src = project.images[0];
   document.getElementById("img2").src = project.images[1];
@@ -46,15 +48,33 @@ function renderProject(index) {
     const id = sectionMap[section.label];
     if (id) {
       const el = document.getElementById(id);
+      el.innerHTML = "";
+
       if (Array.isArray(section.text)) {
-        const ul = document.createElement("ul");
-        section.text.forEach((item) => {
-          const li = document.createElement("li");
-          li.textContent = item;
-          ul.appendChild(li);
-        });
-        el.innerHTML = "";
-        el.appendChild(ul);
+        // 檢查每個 item 是否是物件，若不是就當純文字生成 li
+        if (typeof section.text[0] === "string") {
+          const ul = document.createElement("ul");
+          section.text.forEach(t => {
+            const li = document.createElement("li");
+            li.textContent = t;
+            ul.appendChild(li);
+          });
+          el.appendChild(ul);
+        } else {
+          section.text.forEach((item) => {
+            if (item.type === "paragraph") {
+              el.innerHTML += `<p>${item.content}</p>`;
+            } else if (item.type === "list") {
+              const ul = document.createElement("ul");
+              item.content.forEach(li => {
+                const liEl = document.createElement("li");
+                liEl.textContent = li;
+                ul.appendChild(liEl);
+              });
+              el.appendChild(ul);
+            }
+          });
+        }
       } else {
         el.innerHTML = section.text;
       }
@@ -62,11 +82,21 @@ function renderProject(index) {
   });
 
   // 顯示連結按鈕（如果有的話）
-  if (project.links) {
-    const website = document.getElementById("project-website");
-    const slides = document.getElementById("project-slides");
-    website.href = project.links.website || "#";
-    slides.href = project.links.slides || "#";
+  const website = document.getElementById("project-website");
+  const slides = document.getElementById("project-slides");
+
+  if (project.links && project.links.website) {
+    website.href = project.links.website;
+    website.style.display = "inline-block"; // 顯示
+  } else {
+    website.style.display = "none"; // 沒有連結就隱藏
+  }
+
+  if (project.links && project.links.slides) {
+    slides.href = project.links.slides;
+    slides.style.display = "inline-block"; // 顯示
+  } else {
+    slides.style.display = "none"; // 沒有連結就隱藏
   }
 }
 
