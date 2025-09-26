@@ -1,18 +1,29 @@
 [
-    {
-        "id": 1,
-        "title": "海洋主題環保袋",
-        "category": "插畫",
-        "image": "img/ocean-bag.jpg",
-        "description": "以海洋為主題，結合插畫與環保概念所設計的袋子。",
-        "date": "2024-05"
+  {
+    "title": "2025.08 一起來唱卡拉OK吧.",
+    "images": ["imgs/work/design/karaoke-website.jpg", "imgs/work/design/karaoke-website2.jpg"],
+    "description": "在ux人機介面網頁設計師養成班上課時的期中專題，主題是艾莉森 KTV ，它是一間主打日系與韓系流行文化的主題式KTV主要服務對象是喜愛 動漫、偶像、Vocaloid、韓流音樂與 J-POP/K-POP的族群，收錄的歌曲。我自己很喜歡看動漫跟聽J-POP，和身邊的朋友們一起去過幾次日文KTV，每次預約的時候都會戰戰兢兢的，已經重複閱讀好幾次預約規範還是會害怕自己有缺漏，有「如果OOOO就好了」的想法是最主要的動機。",
+    "links": {
+      "website": "https://leemengchieh.github.io/Midterm-project/",
+      "slides": "https://www.figma.com/board/akhOgSAX1paeNgPGXI8eL9/%E6%9C%9F%E4%B8%AD%E5%B0%88%E9%A1%8C%E5%A0%B1%E5%91%8A?node-id=15-70&t=J2DKjTAHVxrfTuPN-1"
     },
-    {
-        "id": 2,
-        "title": "日式小店 LOGO 設計",
-        "category": "設計",
-        "image": "img/logo.jpg",
-        "description": "為一間日式雜貨小店設計的品牌識別 LOGO。",
-        "date": "2024-03"
-    }
+    "sections": [
+      {
+        "label": "情況",
+        "text": "本次專題針對「包廂預約」的流程整理了問題痛點，包括預約流程屬於手動操作與非正式平台（FB）以及預約前需去別的網頁觀看包廂排程。預約需透過 Facebook 私訊且若有人預約同一時段則以以搶票制排序，看私訊的先後順序。總結下來缺乏「直觀操作」、「即時可視性」。"
+      },
+      {
+        "label": "任務",
+        "text": "思考設計對我來說的代表字..."
+      },
+      {
+        "label": "行動",
+        "text": "而個人創作也是如此，我習慣..."
+      },
+      {
+        "label": "結果",
+        "text": "用於前一本作品集的封面..."
+      }
+    ]
+  }
 ]
