@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+/* Base Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #333;
+  background-color: #f5cd53;
+  /* Default yellow */
+}
+
+/* Enforce minimum font-size of 14px globally for all textual elements */
+body,
+input,
+button,
+textarea,
+select {
+  font-size: 14px;
+}
+
+/* Base page wrapper sizing and colors to replace body background styling */
+.home-page-wrapper {
+  background-color: #f5cd53;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.aboutme-page-wrapper,
+.design-page-wrapper,
+.design-detail-wrapper,
+.ill-detail-wrapper,
+.jp-detail-wrapper {
+  background-color: #f3f2e4;
+  /* Light green-white */
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Home Page page-wrapper transparent override to let yellow span full viewport width */
+.home-page-wrapper .page-wrapper {
+  background-color: transparent;
+}
+
+.home-page-wrapper #title {
+  background-color: #f5cd53;
+}
+
+/* Home Page Banner Stacking Context & Full-Width Aspect Fix */
+.home-page-wrapper .banner {
+  background-color: #f5cd53;
+}
+
+.home-page-wrapper .banner .real,
+.home-page-wrapper .banner .real img {
+  z-index: 1;
+}
+
+.home-page-wrapper .banner .real img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-page-wrapper .banner svg {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* Header Navbar logo petal clipping fix */
+.home-page-wrapper .logo img,
+.aboutme-page-wrapper .logo img,
+.design-page-wrapper .logo img,
+.design-detail-wrapper .logo img,
+.ill-detail-wrapper .logo img,
+.jp-detail-wrapper .logo img {
+  object-fit: contain;
+}
+/* View More buttons styling overrides: No underline and keep default teal color on hover */
+.home-page-wrapper .more.custom-btn a span,
+.aboutme-page-wrapper .more.custom-btn a span,
+.design-page-wrapper .more.custom-btn a span,
+.design-detail-wrapper .more.custom-btn a span,
+.ill-detail-wrapper .more.custom-btn a span,
+.jp-detail-wrapper .more.custom-btn a span {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.home-page-wrapper .more.custom-btn a:hover span,
+.home-page-wrapper .more.custom-btn a:hover i,
+.aboutme-page-wrapper .more.custom-btn a:hover span,
+.aboutme-page-wrapper .more.custom-btn a:hover i,
+.design-page-wrapper .more.custom-btn a:hover span,
+.design-page-wrapper .more.custom-btn a:hover i,
+.design-detail-wrapper .more.custom-btn a:hover span,
+.design-detail-wrapper .more.custom-btn a:hover i,
+.ill-detail-wrapper .more.custom-btn a:hover span,
+.ill-detail-wrapper .more.custom-btn a:hover i,
+.jp-detail-wrapper .more.custom-btn a:hover span,
+.jp-detail-wrapper .more.custom-btn a:hover i {
+  color: #299ea7;
+}
+
+/* Flex Center alignment to put "view more" text exactly in the middle of custom buttons */
+.home-page-wrapper .custom-btn,
+.aboutme-page-wrapper .custom-btn,
+.design-page-wrapper .custom-btn,
+.design-detail-wrapper .custom-btn,
+.ill-detail-wrapper .custom-btn,
+.jp-detail-wrapper .custom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 48px;
+}
+
+.home-page-wrapper .custom-btn a,
+.aboutme-page-wrapper .custom-btn a,
+.design-page-wrapper .custom-btn a,
+.design-detail-wrapper .custom-btn a,
+.ill-detail-wrapper .custom-btn a,
+.jp-detail-wrapper .custom-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  /* Shift text slightly left visually (translateX(-10px)) to balance the hand-drawn border's visual weight */
+  transform: translateX(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* No translateY on hover as requested - text remains in place (translateX(-10px) only) */
+.home-page-wrapper .custom-btn:hover a,
+.aboutme-page-wrapper .custom-btn:hover a,
+.design-page-wrapper .custom-btn:hover a,
+.design-detail-wrapper .custom-btn:hover a,
+.ill-detail-wrapper .custom-btn:hover a,
+.jp-detail-wrapper .custom-btn:hover a {
+  transform: translateX(-10px);
+}
+
+.home-page-wrapper .custom-btn::after,
+.aboutme-page-wrapper .custom-btn::after,
+.design-page-wrapper .custom-btn::after,
+.design-detail-wrapper .custom-btn::after,
+.ill-detail-wrapper .custom-btn::after,
+.jp-detail-wrapper .custom-btn::after {
+  width: 145px;
+  height: 48px;
+  background-image: url('/imgs/button/state=Default,mode=bgwhite.svg?v=10');
+  background-size: 145px 48px;
+}
+
+.home-page-wrapper .custom-btn:hover::after,
+.aboutme-page-wrapper .custom-btn:hover::after,
+.design-page-wrapper .custom-btn:hover::after,
+.design-detail-wrapper .custom-btn:hover::after,
+.ill-detail-wrapper .custom-btn:hover::after,
+.jp-detail-wrapper .custom-btn:hover::after {
+  width: 195px;
+  height: 76px;
+  background-image: url('/imgs/button/state=Hover,mode=bgwhite.svg?v=10');
+  background-size: 195px 76px;
+  transform: translateY(-50%) translateY(4px);
+}
+
+/* Specific styling for the View More button inside #about section (without outline border, simple underlined text, hover turns orange instantly) */
+.home-page-wrapper #about .more a,
+.home-page-wrapper #about .more a span,
+.home-page-wrapper #about .more a i,
+.home-page-wrapper #about .more a:hover,
+.home-page-wrapper #about .more a:hover span,
+.home-page-wrapper #about .more a:hover i {
+  transition: none;
+}
+
+.home-page-wrapper #about .more a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  transform: none;
+  font-size: 18px;
+  color: #299ea7;
+  /* Default accent color */
+  text-decoration: none;
+  gap: 8px;
+  /* Gap from text to the play icon */
+}
+
+.home-page-wrapper #about .more a span {
+  border-bottom: 1px solid #299ea7;
+  /* Simple underline */
+  padding-bottom: 4px;
+}
+
+.home-page-wrapper #about .more a i {
+  color: #299ea7;
+  font-size: 14px;
+  /* Minimum font size of 14px */
+}
+
+.home-page-wrapper #about .more a:hover span {
+  color: #e9562a;
+  /* Turn orange instantly on hover */
+  border-color: #e9562a;
+}
+
+.home-page-wrapper #about .more a:hover i {
+  color: #e9562a;
+  /* Icon turns orange instantly on hover */
+}
+
+/* Align custom-btn view more buttons under #work to the right */
+#work .more.custom-btn {
+  margin-left: auto;
+}
+
+/* Contact social icons spacing from bottom footer */
+.home-page-wrapper .social-icons,
+.aboutme-page-wrapper .social-icons,
+.design-page-wrapper .social-icons,
+.design-detail-wrapper .social-icons,
+.ill-detail-wrapper .social-icons,
+.jp-detail-wrapper .social-icons {
+  margin-bottom: 60px;
+}
+
+/* Go to top floating button scaling (global style, since it is rendered outside page wrappers) */
+.go-to-top img {
+  width: 40px;
+  /* Set mobile default size to 40px */
+}
+
+@media (min-width: 768px) {
+  .go-to-top img {
+    width: 50px;
+    /* Set desktop size to 50px */
+  }
+
+  .home-page-wrapper .bg-animation {
+    width: 100%;
+  }
+
+  .home-page-wrapper .banner {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 1200 / 717;
+  }
+
+  .home-page-wrapper .banner svg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Position the navbar links hover underline lower so it is not too close to the text */
+.home-page-wrapper .header .custom-navbar .nav-link::after,
+.aboutme-page-wrapper .header .custom-navbar .nav-link::after,
+.design-page-wrapper .header .custom-navbar .nav-link::after,
+.design-detail-wrapper .header .custom-navbar .nav-link::after,
+.ill-detail-wrapper .header .custom-navbar .nav-link::after,
+.jp-detail-wrapper .header .custom-navbar .nav-link::after {
+  bottom: -10px;
+}
+
+/* Keep a 20px gap on left and right sides of the page on screens up to 1240px wide */
+@media (max-width: 1240px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-page-wrapper #work .design {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Experience Section stacked cards (icon left, text right) - TABLET ONLY */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-page-wrapper .experience-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* Yubisashi at the bottom-left */
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .home-page-wrapper .card-column {
+    display: flex;
+    flex-direction: column; /* Stack cards top-to-bottom */
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .home-page-wrapper .experience-card {
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  .home-page-wrapper .experience-card a {
+    display: flex;
+    flex-direction: row; /* Icon left, text right */
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .home-page-wrapper .experience-card .card-icon {
+    margin-bottom: 0;
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
+  }
+
+  .home-page-wrapper .experience-card .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .home-page-wrapper .experience-card h3 {
+    margin-bottom: 0;
+  }
+}
+
+/* Remove paint effect border and use normal underline with solid triangle on tablet/mobile screens - TABLET & MOBILE */
+@media (max-width: 1024px) {
+  .home-page-wrapper .more.custom-btn,
+  .design-page-wrapper .more.custom-btn,
+  .aboutme-page-wrapper .more.custom-btn,
+  .ill-detail-wrapper .more.custom-btn,
+  .jp-detail-wrapper .more.custom-btn {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+  .home-page-wrapper #work .more.custom-btn {
+    margin-left: auto;
+  }
+
+  .home-page-wrapper .more.custom-btn::after,
+  .design-page-wrapper .more.custom-btn::after,
+  .aboutme-page-wrapper .more.custom-btn::after,
+  .ill-detail-wrapper .more.custom-btn::after,
+  .jp-detail-wrapper .more.custom-btn::after {
+    content: none; /* Hide paint border */
+  }
+
+  .home-page-wrapper .more.custom-btn a,
+  .design-page-wrapper .more.custom-btn a,
+  .aboutme-page-wrapper .more.custom-btn a,
+  .ill-detail-wrapper .more.custom-btn a,
+  .jp-detail-wrapper .more.custom-btn a {
+    transform: none; /* Remove horizontal translate offset */
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    color: #299ea7;
+    gap: 8px; /* Spacing from text to triangle */
+  }
+
+  /* Add solid triangle on the right using CSS ::after on the <a> tag */
+  .home-page-wrapper .more.custom-btn a::after,
+  .design-page-wrapper .more.custom-btn a::after,
+  .aboutme-page-wrapper .more.custom-btn a::after,
+  .ill-detail-wrapper .more.custom-btn a::after,
+  .jp-detail-wrapper .more.custom-btn a::after {
+    content: "\25B6"; /* Solid right-pointing triangle */
+    font-size: 10px; /* Small play icon size */
+    color: inherit; /* Inherits accent or orange color */
+    display: inline-block;
+    transition: none;
+  }
+}
+
+/* Fix footer clipping caused by relative top shifting of sections */
+.page-wrapper {
+  padding-bottom: 97px;
+}

@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "title": "京都商店街－京都かみんぐ商品介紹",
+        "description": "那時候的專題是採訪附近商店街的店家，並與同學介紹該家商店，而我負責的是商店商品的部分",
+        "images": [
+            "./imgs/work/japanese/kamingu/kamingu-1.png",
+            "./imgs/work/japanese/kamingu/kamingu-2.png"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "關於貧乏神",
+        "description": "那時候的專題是介紹有趣的日本文化，而我印象很深的是各國對神明的看法大多是正面的，可向祂祈求與祈願，但日本有八百萬神明，當中也有像貧乏神這樣帶來不幸的神明。",
+        "images": [
+            "./imgs/work/japanese/binbou/kami1.JPG",
+            "./imgs/work/japanese/binbou/kami2.JPG",
+            "./imgs/work/japanese/binbou/kami3.JPG",
+            "./imgs/work/japanese/binbou/kami4.JPG",
+            "./imgs/work/japanese/binbou/kami5.JPG",
+            "./imgs/work/japanese/binbou/kami6.JPG",
+            "./imgs/work/japanese/binbou/kami7.JPG",
+            "./imgs/work/japanese/binbou/kami8.JPG",
+            "./imgs/work/japanese/binbou/kami9.JPG",
+            "./imgs/work/japanese/binbou/kami10.JPG",
+            "./imgs/work/japanese/binbou/kami11.JPG"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "關於夢女子",
+        "description": "那時候的作業是要訪問日本人，而我在網路上認識了一個日本女孩並成為朋友，聊天聊到他是夢女子。藉這個機會決定向班上同學介紹什麼是夢女子。",
+        "images": [
+            "./imgs/work/japanese/yume/yumejyo1.jpg",
+            "./imgs/work/japanese/yume/yumejyo2.jpg",
+            "./imgs/work/japanese/yume/yumejyo3.jpg",
+            "./imgs/work/japanese/yume/yumejyo4.jpg",
+            "./imgs/work/japanese/yume/yumejyo5.jpg",
+            "./imgs/work/japanese/yume/yumejyo6.jpg",
+            "./imgs/work/japanese/yume/yumejyo7.jpg"
+        ]
+    }
+]
