@@ -99,7 +99,7 @@ export default function Home() {
               </div>
               <div className="about-icons">
                 <img src="/imgs/icon 2.svg" alt="icon" />
-                <div className="more">
+                <div className="more custom-btn">
                   <Link to="/about">
                     <span>view more</span>
                     <i className="fa-solid fa-play"></i>

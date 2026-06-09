@@ -4,6 +4,15 @@ import illData from '../data/work-ill.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const resolveImgSrc = (src) => {
+  if (!src) return '';
+  const clean = src.startsWith('.') ? src.slice(1) : src;
+  const path = clean.startsWith('/') ? clean : '/' + clean;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  return cleanBase + path;
+};
+
 export default function IllustrationDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -32,9 +41,9 @@ export default function IllustrationDetail() {
           <div className="title">{project.title}</div>
           <div className="portfolio-page">
             <div className={`images ${hasTwoImages ? 'two-images' : 'single-image'}`}>
-              <img id="img1" src={project.images[0] || ''} alt="作品圖1" />
+              <img id="img1" src={resolveImgSrc(project.images[0])} alt="作品圖1" />
               {hasTwoImages && (
-                <img id="img2" src={project.images[1] || ''} alt="作品圖2" />
+                <img id="img2" src={resolveImgSrc(project.images[1])} alt="作品圖2" />
               )}
             </div>
 

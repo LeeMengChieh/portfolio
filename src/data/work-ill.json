@@ -2,108 +2,115 @@
     {
         "title": "2023.07 圍裙插圖",
         "images": [
-            "./imgs/work/illustration/apron2.png",
-            "./imgs/work/illustration/apron.jpg"
+            "/imgs/work/illustration/apron2.png",
+            "/imgs/work/illustration/apron.jpg"
         ],
         "description": "以麵包店為概念繪製的圍裙插圖。"
     },
     {
         "title": "2023.08 耳機殼",
         "images": [
-            "./imgs/work/illustration/AirPods.png",
-            "./imgs/work/illustration/AirPodscase1x1.jpg"
+            "/imgs/work/illustration/AirPods.png",
+            "/imgs/work/illustration/AirPodscase1x1.jpg"
         ],
         "description": "以海豹吃飯為概念畫的耳機殼插圖。"
     },
     {
         "title": "2024.11 2025新年卡片",
         "images": [
-            "./imgs/work/illustration/happy2025.jpg"
+            "/imgs/work/illustration/happy2025.jpg"
         ],
         "description": "2025是蛇年，繪製了蛇年卡片。"
     },
     {
         "title": "2023.11 新年卡片",
         "images": [
-            "./imgs/work/illustration/happy2024.jpg"
+            "/imgs/work/illustration/happy2024.jpg"
         ],
         "description": "2024是龍年，繪製了龍年卡片。"
     },
     {
         "title": "2022.11 新年卡片",
         "images": [
-            "./imgs/work/illustration/happy2023.jpg"
+            "/imgs/work/illustration/happy2023.jpg"
         ],
         "description": "2023是兔年，繪製了兔年卡片。"
     },
     {
+        "title": "2022.11 2022新年卡片",
+        "images": [
+            "/imgs/work/illustration/happy2022.jpg"
+        ],
+        "description": "2022是虎年，繪製了虎年卡片。"
+    },
+    {
         "title": "2023.08 喜帖委託",
         "images": [
-            "./imgs/work/illustration/wedding invitation.jpg"
+            "/imgs/work/illustration/wedding invitation.jpg"
         ],
         "description": "受人委託繪製的喜帖圖。"
     },
     {
         "title": "2022.06 鴨子插圖",
         "images": [
-            "./imgs/work/illustration/duck.jpg",
-            "./imgs/work/illustration/duck-2.jpg"
+            "/imgs/work/illustration/duck.jpg",
+            "/imgs/work/illustration/duck-2.jpg"
         ],
         "description": "受人委託繪製的鴨子。"
     },
     {
         "title": "2022.11 LOHAS繪圖投稿",
         "images": [
-            "./imgs/work/illustration/LOHAS.jpg"
+            "/imgs/work/illustration/LOHAS.jpg"
         ],
         "description": "在京都留學時的夏日風景。"
     },
     {
         "title": "2022.09 向日葵田",
         "images": [
-            "./imgs/work/illustration/sunflowers.jpg"
+            "/imgs/work/illustration/sunflowers.jpg"
         ],
         "description": "7月時有和朋友一起去富良野，那時看到一大片的向日葵。"
     },
     {
         "title": "2021.03 非商業委託繪圖",
         "images": [
-            "./imgs/work/illustration/commissioned.jpg"
+            "/imgs/work/illustration/commissioned.jpg"
         ],
         "description": "受人委託繪製的插圖。"
     },
     {
         "title": "2021.02 便利商店插圖",
         "images": [
-            "./imgs/work/illustration/market.jpg"
+            "/imgs/work/illustration/market.jpg"
         ],
         "description": "那時候很想畫一張玲瑯滿目的便利商店。"
     },
     {
         "title": "2022.03 happylife",
         "images": [
-            "./imgs/work/illustration/me.jpg"
+            "/imgs/work/illustration/me.jpg"
         ],
         "description": "想著被喜歡事物圍繞的插圖。"
     },
     {
         "title": "2021.03 Rabbit",
         "images": [
-            "./imgs/work/illustration/rabbit.jpg"
+            "/imgs/work/illustration/rabbit.jpg"
         ],
         "description": "那時候很喜歡藍色時期的故事，其中一個角色的心境讓我很有感觸，於是畫了這張插圖。"
     },
     {
         "title": "2021.01 幽暗漆黑",
         "images": [
-            "./imgs/work/illustration/zuttomayo.jpg"
+            "/imgs/work/illustration/zuttomayo.jpg"
         ],
         "description": "永遠是深夜有多好。"
     },
     {
         "title": "2021.02 手機殼插圖",
         "images": [
-            "./imgs/work/illustration/smartphonecase.jpg"
+            "/imgs/work/illustration/smartphonecase.jpg"
         ],
         "description": "想要一個手機殼但不想和別人一樣，於是自己畫了一個。"
     }

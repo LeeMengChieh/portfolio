@@ -80,6 +80,7 @@ export default function Illustration() {
                       <div className="more custom-btn">
                         <Link to={`/illustration/${globalIndex}`}>
                           <span>view more</span>
+                          <i className="fa-solid fa-play"></i>
                         </Link>
                       </div>
                     </div>

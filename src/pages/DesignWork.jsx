@@ -31,7 +31,7 @@ const displayTitles = {
   4: '標準字',
   5: '故宮100+',
   6: '淨灘活動logo',
-  7: '27週年logo',
+  7: '27周年logo',
   8: '紅包設計',
   9: '展覽相關設計',
   10: '咖啡包包裝貼紙',
@@ -66,6 +66,7 @@ export default function DesignWork() {
         <div className="more custom-btn">
           <Link to={`/design/${index}`}>
             <span>view more</span>
+            <i className="fa-solid fa-play"></i>
           </Link>
         </div>
       </div>

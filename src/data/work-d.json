@@ -2,8 +2,8 @@
   {
     "title": "2025.08 網頁專案：一起來唱卡拉OK吧!",
     "images": [
-      "./imgs/work/design/karaoke-website.jpg",
-      "./imgs/work/design/karaoke-website2.jpg"
+      "/imgs/work/design/karaoke-website.jpg",
+      "/imgs/work/design/karaoke-website2.jpg"
     ],
     "description": "在ux人機介面網頁設計師養成班上課時的期中專題，主題是艾莉森 KTV ，它是一間主打日系與韓系流行文化的主題式KTV主要服務對象是喜愛 動漫、偶像、Vocaloid、韓流音樂與 J-POP/K-POP的族群，收錄的歌曲。我自己很喜歡看動漫跟聽J-POP，和身邊的朋友們一起去過幾次日文KTV，每次預約的時候都會戰戰兢兢的，已經重複閱讀好幾次預約規範還是會害怕自己有缺漏，有「如果OOOO就好了」的想法是最主要的動機。",
     "links": {
@@ -56,8 +56,8 @@
   {
     "title": "2025.08 室內設計切版練習",
     "images": [
-      "./imgs/work/design/interior-pc.jpg",
-      "./imgs/work/design/interior-pc-2.jpg"
+      "/imgs/work/design/interior-pc.jpg",
+      "/imgs/work/design/interior-pc-2.jpg"
     ],
     "description": "學了html和css的基本排版技巧，並嘗試將其應用於實際的網頁設計中。 這個專案的目標是創建一個室內設計公司的網站，展示其服務、作品集和聯絡資訊。這個專案讓我學會了如何使用HTML結構化內容，並利用CSS進行樣式設計和佈局調整。此外，我還學習了如何使網站具備響應式設計，以確保在不同裝置上都有良好的瀏覽體驗。",
     "links": {
@@ -85,8 +85,8 @@
   {
     "title": "2025.07 網頁設計：緣起物博物館",
     "images": [
-      "./imgs/work/design/index1.jpg",
-      "./imgs/work/design/index2.jpg"
+      "/imgs/work/design/index1.jpg",
+      "/imgs/work/design/index2.jpg"
     ],
     "description": "這是嘗試用習慣的PS去設計網頁排版，學到很多網頁設計的基本區塊與要注意的數值，以及圖卡製作呈現方法，也讓之後的期中期末專案有更加明確的注意事項，這個也是第一次使用AI輔助一些素材呈現",
     "links": {},
@@ -118,10 +118,10 @@
   {
     "title": "2025.06 Redesign UI設計",
     "images": [
-      "./imgs/work/design/UI/button.png",
-      "./imgs/work/design/UI/practice.png",
-      "./imgs/work/design/UI/practice-2.png",
-      "./imgs/work/design/UI/practice-3.png"
+      "/imgs/work/design/UI/button.png",
+      "/imgs/work/design/UI/practice.png",
+      "/imgs/work/design/UI/practice-2.png",
+      "/imgs/work/design/UI/practice-3.png"
     ],
     "description": "參照常用按鈕應用Adobe Illustrator設計一套UI按鈕組合，包含按鈕、輸入框、選單、切換鈕等，並嘗試不同的風格與配色，學習如何設計出符合使用者需求且易於操作的介面。以及其他的一些redesign練習",
     "links": {},
@@ -152,7 +152,7 @@
   {
     "title": "2024.06 logo設計",
     "images": [
-      "./imgs/work/design/logo-2.svg"
+      "/imgs/work/design/logo-2.svg"
     ],
     "description": "從文字發想設計的練習",
     "links": {},
@@ -178,8 +178,8 @@
   {
     "title": "2024.05 故宮100周年紀念logo設計",
     "images": [
-      "./imgs/work/design/National Palace Museum.svg",
-      "./imgs/work/design/National Palace Museum-1.png"
+      "/imgs/work/design/National Palace Museum.svg",
+      "/imgs/work/design/National Palace Museum-1.png"
     ],
     "description": "看到故宮徵稿，想說來試試看，思考了用文字去呈現我印象中的故宮",
     "links": {},
@@ -205,8 +205,8 @@
   {
     "title": "2024.04 淨灘活動主視覺logo設計",
     "images": [
-      "./imgs/work/design/beachclean.svg",
-      "./imgs/work/design/beachclean.png"
+      "/imgs/work/design/beachclean.svg",
+      "/imgs/work/design/beachclean.png"
     ],
     "description": "把圖案簡單向量化logo設計",
     "links": {},
@@ -232,8 +232,8 @@
   {
     "title": "2023.11 周年logo設計",
     "images": [
-      "./imgs/work/design/27logo.svg",
-      "./imgs/work/design/27logo.png"
+      "/imgs/work/design/27logo.svg",
+      "/imgs/work/design/27logo.png"
     ],
     "description": "根據需求去設計logo",
     "links": {},
@@ -259,8 +259,8 @@
   {
     "title": "2023.11 紅包袋圖案設計",
     "images": [
-      "./imgs/work/design/Red envelope.svg",
-      "./imgs/work/design/Red-envelope.png"
+      "/imgs/work/design/Red envelope.svg",
+      "/imgs/work/design/Red-envelope.png"
     ],
     "description": "紅包袋圖案設計，考量燙金需求，不能繪製太細的線條。",
     "links": {},
@@ -286,8 +286,8 @@
   {
     "title": "2024.07 展覽易拉展設計",
     "images": [
-      "./imgs/work/design/semicon.png",
-      "./imgs/work/design/semicon-post.png"
+      "/imgs/work/design/semicon.png",
+      "/imgs/work/design/semicon-post.png"
     ],
     "description": "因應一年一度的半導體展覽，根據條件去思考設計圖案",
     "links": {},
@@ -313,8 +313,8 @@
   {
     "title": "2027.07 咖啡包裝貼紙設計",
     "images": [
-      "./imgs/work/design/coffee-.png",
-      "./imgs/work/design/coffee.png"
+      "/imgs/work/design/coffee-.png",
+      "/imgs/work/design/coffee.png"
     ],
     "description": "因應一年一度的半導體展覽，根據條件去思考設計圖案",
     "links": {},
@@ -340,8 +340,8 @@
   {
     "title": "2024.02 SDGs牆面設計",
     "images": [
-      "./imgs/work/design/SDGs.svg",
-      "./imgs/work/design/SDGs.jpg"
+      "/imgs/work/design/SDGs.svg",
+      "/imgs/work/design/SDGs.jpg"
     ],
     "description": "考量牆面尺寸與張貼位置，設計適合的圖案",
     "links": {},
@@ -367,7 +367,7 @@
   {
     "title": "2023.10 強化月視覺設計",
     "images": [
-      "./imgs/work/design/logo-3.jpg"
+      "/imgs/work/design/logo-3.jpg"
     ],
     "description": "根據需求去設計logo",
     "links": {},
@@ -393,8 +393,8 @@
   {
     "title": "2023.02 學校成果展封面字設計",
     "images": [
-      "./imgs/work/design/schoollogo.svg",
-      "./imgs/work/design/schoollogo.jpg"
+      "/imgs/work/design/schoollogo.svg",
+      "/imgs/work/design/schoollogo.jpg"
     ],
     "description": "當時就學的語言學校成果展封面字設計",
     "links": {},
@@ -420,8 +420,8 @@
   {
     "title": "2025.09 清晨農舖專案-UI視覺設計",
     "images": [
-      "./imgs/work/design/shop-pc_1.png",
-      "./imgs/work/design/shop-3.png"
+      "/imgs/work/design/shop-pc_1.png",
+      "/imgs/work/design/shop-3.png"
     ],
     "description": "於資策會UX人機介面設計師養成班的期末專案，針對清晨農舖的網站進行UI視覺設計，目標是提升使用者體驗並增加網站的吸引力。專案中，我們重新設計了網站的色彩方案、字體選擇以及圖像元素，以確保整體風格與品牌形象一致。此外，我們還優化了導航結構，使使用者能夠更輕鬆地找到所需資訊。最終，我們通過多次迭代和用戶測試，確保設計符合使用者需求並達到預期效果。",
     "links": {

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function AboutMe() {
+  useEffect(() => {
+    document.body.classList.add('aboutme-body');
+    return () => {
+      document.body.classList.remove('aboutme-body');
+    };
+  }, []);
+
   return (
     <div className="aboutme-page-wrapper">
       <div className="page-wrapper">

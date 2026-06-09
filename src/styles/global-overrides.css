@@ -85,11 +85,7 @@ select {
 }
 /* View More buttons styling overrides: No underline and keep default teal color on hover */
 .home-page-wrapper .more.custom-btn a span,
-.aboutme-page-wrapper .more.custom-btn a span,
-.design-page-wrapper .more.custom-btn a span,
-.design-detail-wrapper .more.custom-btn a span,
-.ill-detail-wrapper .more.custom-btn a span,
-.jp-detail-wrapper .more.custom-btn a span {
+.aboutme-page-wrapper .more.custom-btn a span {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -97,25 +93,13 @@ select {
 .home-page-wrapper .more.custom-btn a:hover span,
 .home-page-wrapper .more.custom-btn a:hover i,
 .aboutme-page-wrapper .more.custom-btn a:hover span,
-.aboutme-page-wrapper .more.custom-btn a:hover i,
-.design-page-wrapper .more.custom-btn a:hover span,
-.design-page-wrapper .more.custom-btn a:hover i,
-.design-detail-wrapper .more.custom-btn a:hover span,
-.design-detail-wrapper .more.custom-btn a:hover i,
-.ill-detail-wrapper .more.custom-btn a:hover span,
-.ill-detail-wrapper .more.custom-btn a:hover i,
-.jp-detail-wrapper .more.custom-btn a:hover span,
-.jp-detail-wrapper .more.custom-btn a:hover i {
+.aboutme-page-wrapper .more.custom-btn a:hover i {
   color: #299ea7;
 }
 
 /* Flex Center alignment to put "view more" text exactly in the middle of custom buttons */
 .home-page-wrapper .custom-btn,
-.aboutme-page-wrapper .custom-btn,
-.design-page-wrapper .custom-btn,
-.design-detail-wrapper .custom-btn,
-.ill-detail-wrapper .custom-btn,
-.jp-detail-wrapper .custom-btn {
+.aboutme-page-wrapper .custom-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,17 +108,14 @@ select {
 }
 
 .home-page-wrapper .custom-btn a,
-.aboutme-page-wrapper .custom-btn a,
-.design-page-wrapper .custom-btn a,
-.design-detail-wrapper .custom-btn a,
-.ill-detail-wrapper .custom-btn a,
-.jp-detail-wrapper .custom-btn a {
+.aboutme-page-wrapper .custom-btn a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   text-decoration: none;
+  gap: 8px;
   /* Shift text slightly left visually (translateX(-10px)) to balance the hand-drawn border's visual weight */
   transform: translateX(-10px);
   transition: transform 0.3s ease;
@@ -142,20 +123,12 @@ select {
 
 /* No translateY on hover as requested - text remains in place (translateX(-10px) only) */
 .home-page-wrapper .custom-btn:hover a,
-.aboutme-page-wrapper .custom-btn:hover a,
-.design-page-wrapper .custom-btn:hover a,
-.design-detail-wrapper .custom-btn:hover a,
-.ill-detail-wrapper .custom-btn:hover a,
-.jp-detail-wrapper .custom-btn:hover a {
+.aboutme-page-wrapper .custom-btn:hover a {
   transform: translateX(-10px);
 }
 
 .home-page-wrapper .custom-btn::after,
-.aboutme-page-wrapper .custom-btn::after,
-.design-page-wrapper .custom-btn::after,
-.design-detail-wrapper .custom-btn::after,
-.ill-detail-wrapper .custom-btn::after,
-.jp-detail-wrapper .custom-btn::after {
+.aboutme-page-wrapper .custom-btn::after {
   width: 145px;
   height: 48px;
   background-image: url('/imgs/button/state=Default,mode=bgwhite.svg?v=10');
@@ -163,11 +136,7 @@ select {
 }
 
 .home-page-wrapper .custom-btn:hover::after,
-.aboutme-page-wrapper .custom-btn:hover::after,
-.design-page-wrapper .custom-btn:hover::after,
-.design-detail-wrapper .custom-btn:hover::after,
-.ill-detail-wrapper .custom-btn:hover::after,
-.jp-detail-wrapper .custom-btn:hover::after {
+.aboutme-page-wrapper .custom-btn:hover::after {
   width: 195px;
   height: 76px;
   background-image: url('/imgs/button/state=Hover,mode=bgwhite.svg?v=10');
@@ -176,51 +145,46 @@ select {
 }
 
 /* Specific styling for the View More button inside #about section (without outline border, simple underlined text, hover turns orange instantly) */
-.home-page-wrapper #about .more a,
-.home-page-wrapper #about .more a span,
-.home-page-wrapper #about .more a i,
-.home-page-wrapper #about .more a:hover,
-.home-page-wrapper #about .more a:hover span,
-.home-page-wrapper #about .more a:hover i {
-  transition: none;
+.home-page-wrapper #about .more.custom-btn {
+  width: auto;
+  height: auto;
+  line-height: normal;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-page-wrapper #about .more a {
+.home-page-wrapper #about .more.custom-btn::after {
+  content: none !important;
+}
+
+.home-page-wrapper #about .more.custom-btn a {
+  width: auto;
+  height: auto;
+  transform: none !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: auto;
-  transform: none;
-  font-size: 18px;
   color: #299ea7;
-  /* Default accent color */
+  font-size: 18px;
   text-decoration: none;
   gap: 8px;
-  /* Gap from text to the play icon */
+  transition: color 0.3s ease;
 }
 
-.home-page-wrapper #about .more a span {
-  border-bottom: 1px solid #299ea7;
-  /* Simple underline */
-  padding-bottom: 4px;
+.home-page-wrapper #about .more.custom-btn a span {
+  border-bottom: 1px solid currentColor !important;
+  padding-bottom: 4px !important;
 }
 
-.home-page-wrapper #about .more a i {
+.home-page-wrapper #about .more.custom-btn a i {
   color: #299ea7;
   font-size: 14px;
-  /* Minimum font size of 14px */
 }
 
-.home-page-wrapper #about .more a:hover span {
-  color: #e9562a;
-  /* Turn orange instantly on hover */
-  border-color: #e9562a;
-}
-
-.home-page-wrapper #about .more a:hover i {
-  color: #e9562a;
-  /* Icon turns orange instantly on hover */
+.home-page-wrapper #about .more.custom-btn a:hover span,
+.home-page-wrapper #about .more.custom-btn a:hover i {
+  color: #e9562a !important;
 }
 
 /* Align custom-btn view more buttons under #work to the right */
@@ -342,13 +306,10 @@ select {
   }
 }
 
-/* Remove paint effect border and use normal underline with solid triangle on tablet/mobile screens - TABLET & MOBILE */
+/* Remove paint effect border on tablet/mobile screens for home/aboutme pages */
 @media (max-width: 1024px) {
   .home-page-wrapper .more.custom-btn,
-  .design-page-wrapper .more.custom-btn,
-  .aboutme-page-wrapper .more.custom-btn,
-  .ill-detail-wrapper .more.custom-btn,
-  .jp-detail-wrapper .more.custom-btn {
+  .aboutme-page-wrapper .more.custom-btn {
     width: auto;
     height: auto;
     display: inline-flex;
@@ -360,18 +321,12 @@ select {
   }
 
   .home-page-wrapper .more.custom-btn::after,
-  .design-page-wrapper .more.custom-btn::after,
-  .aboutme-page-wrapper .more.custom-btn::after,
-  .ill-detail-wrapper .more.custom-btn::after,
-  .jp-detail-wrapper .more.custom-btn::after {
+  .aboutme-page-wrapper .more.custom-btn::after {
     content: none; /* Hide paint border */
   }
 
   .home-page-wrapper .more.custom-btn a,
-  .design-page-wrapper .more.custom-btn a,
-  .aboutme-page-wrapper .more.custom-btn a,
-  .ill-detail-wrapper .more.custom-btn a,
-  .jp-detail-wrapper .more.custom-btn a {
+  .aboutme-page-wrapper .more.custom-btn a {
     transform: none; /* Remove horizontal translate offset */
     width: auto;
     height: auto;
@@ -381,21 +336,51 @@ select {
     gap: 8px; /* Spacing from text to triangle */
   }
 
-  /* Add solid triangle on the right using CSS ::after on the <a> tag */
+  /* Mobile triangle is handled natively by the FontAwesome <i> tag in JSX, so we disable the CSS pseudo-element fallback */
   .home-page-wrapper .more.custom-btn a::after,
-  .design-page-wrapper .more.custom-btn a::after,
-  .aboutme-page-wrapper .more.custom-btn a::after,
-  .ill-detail-wrapper .more.custom-btn a::after,
-  .jp-detail-wrapper .more.custom-btn a::after {
-    content: "\25B6"; /* Solid right-pointing triangle */
-    font-size: 10px; /* Small play icon size */
-    color: inherit; /* Inherits accent or orange color */
-    display: inline-block;
-    transition: none;
+  .aboutme-page-wrapper .more.custom-btn a::after {
+    content: none;
   }
 }
 
 /* Fix footer clipping caused by relative top shifting of sections */
 .page-wrapper {
   padding-bottom: 97px;
+}
+
+/* Dynamically override body background to beige on About Me page */
+body.aboutme-body {
+  background-color: #f3f2e4 !important;
+}
+
+/* Center page-wrapper at max 1200px on desktop for list and detail pages to match original layout */
+@media (min-width: 768px) {
+  .design-page-wrapper .page-wrapper,
+  .design-detail-wrapper .page-wrapper,
+  .ill-detail-wrapper .page-wrapper,
+  .jp-detail-wrapper .page-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f3f2e4;
+  }
+}
+
+/* Disable custom shaped button borders and size constraints on subpages globally */
+.design-page-wrapper .custom-btn,
+.design-detail-wrapper .custom-btn,
+.ill-detail-wrapper .custom-btn,
+.jp-detail-wrapper .custom-btn {
+  width: auto;
+  height: auto;
+  line-height: normal;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-page-wrapper .custom-btn::after,
+.design-detail-wrapper .custom-btn::after,
+.ill-detail-wrapper .custom-btn::after,
+.jp-detail-wrapper .custom-btn::after {
+  content: none !important;
 }

@@ -4,6 +4,15 @@ import designData from '../data/work-d.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const resolveImgSrc = (src) => {
+  if (!src) return '';
+  const clean = src.startsWith('.') ? src.slice(1) : src;
+  const path = clean.startsWith('/') ? clean : '/' + clean;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  return cleanBase + path;
+};
+
 export default function DesignDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -66,7 +75,7 @@ export default function DesignDetail() {
           <div className="portfolio-page">
             <div className={`images ${project.images?.length === 1 ? 'single' : ''}`}>
               {project.images?.map((imgSrc, idx) => (
-                <img key={idx} src={imgSrc} alt="作品圖" />
+                <img key={idx} src={resolveImgSrc(imgSrc)} alt="作品圖" />
               ))}
             </div>
 

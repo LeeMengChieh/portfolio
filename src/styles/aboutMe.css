@@ -455,12 +455,20 @@
     }
 
     & {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-white);
+    }
+
+    .page-wrapper {
       margin: auto;
       max-width: 1200px;
       padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 100px;
       padding-right: 100px;
+      background-color: var(--color-white);
     }
 
     .header-container {

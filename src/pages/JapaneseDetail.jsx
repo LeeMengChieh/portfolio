@@ -4,6 +4,15 @@ import jpData from '../data/work-jp.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const resolveImgSrc = (src) => {
+  if (!src) return '';
+  const clean = src.startsWith('.') ? src.slice(1) : src;
+  const path = clean.startsWith('/') ? clean : '/' + clean;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  return cleanBase + path;
+};
+
 export default function JapaneseDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -37,7 +46,7 @@ export default function JapaneseDetail() {
               {project.images?.map((imgSrc, idx) => (
                 <img 
                   key={idx} 
-                  src={imgSrc} 
+                  src={resolveImgSrc(imgSrc)} 
                   alt={project.title} 
                   style={{ width: '100%', marginBottom: '20px' }} 
                 />

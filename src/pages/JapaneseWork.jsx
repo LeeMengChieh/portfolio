@@ -36,6 +36,7 @@ export default function JapaneseWork() {
                     <div className="more custom-btn">
                       <Link to={`/japanese/${idx}`}>
                         <span>view more</span>
+                        <i className="fa-solid fa-play"></i>
                       </Link>
                     </div>
                   </div>
