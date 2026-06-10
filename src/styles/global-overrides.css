@@ -306,42 +306,6 @@ select {
   }
 }
 
-/* Remove paint effect border on tablet/mobile screens for home/aboutme pages */
-@media (max-width: 1024px) {
-  .home-page-wrapper .more.custom-btn,
-  .aboutme-page-wrapper .more.custom-btn {
-    width: auto;
-    height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
-  }
-
-  .home-page-wrapper #work .more.custom-btn {
-    margin-left: auto;
-  }
-
-  .home-page-wrapper .more.custom-btn::after,
-  .aboutme-page-wrapper .more.custom-btn::after {
-    content: none; /* Hide paint border */
-  }
-
-  .home-page-wrapper .more.custom-btn a,
-  .aboutme-page-wrapper .more.custom-btn a {
-    transform: none; /* Remove horizontal translate offset */
-    width: auto;
-    height: auto;
-    display: inline-flex;
-    align-items: center;
-    color: #299ea7;
-    gap: 8px; /* Spacing from text to triangle */
-  }
-
-  /* Mobile triangle is handled natively by the FontAwesome <i> tag in JSX, so we disable the CSS pseudo-element fallback */
-  .home-page-wrapper .more.custom-btn a::after,
-  .aboutme-page-wrapper .more.custom-btn a::after {
-    content: none;
-  }
-}
 
 /* Fix footer clipping caused by relative top shifting of sections */
 .page-wrapper {
