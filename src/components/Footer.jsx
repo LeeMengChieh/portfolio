@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../utils/imgPath';
 
 export default function Footer() {
   return (
@@ -17,13 +18,13 @@ export default function Footer() {
           </div>
           <div className="social-icons">
             <a href="https://www.instagram.com/hakua_1156/" target="_blank" rel="noopener noreferrer">
-              <img src="/imgs/ins.svg" alt="Instagram" />
+              <img src={img('/imgs/ins.svg')} alt="Instagram" />
             </a>
             <a href="https://www.plurk.com/iamgerms" target="_blank" rel="noopener noreferrer">
-              <img src="/imgs/plurk.svg" alt="Plurk" />
+              <img src={img('/imgs/plurk.svg')} alt="Plurk" />
             </a>
             <a href="mailto:hakua1156@gmail.com">
-              <img src="/imgs/mail.svg" alt="Mail" />
+              <img src={img('/imgs/mail.svg')} alt="Mail" />
             </a>
           </div>
         </div>
