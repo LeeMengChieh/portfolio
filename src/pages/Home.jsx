@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import img from '../utils/imgPath';
 
 export default function Home() {
   const svgRef = useRef(null);
@@ -40,11 +41,11 @@ export default function Home() {
         {/* Title Section */}
         <section id="title">
           <div className="hero-title">
-            <img src="/imgs/bg-m.svg" alt="background" className="mobile-bg" />
+            <img src={img('/imgs/bg-m.svg')} alt="background" className="mobile-bg" />
             <div className="bg-animation">
               <div className="banner">
                 <div className="real">
-                  <img src="/imgs/kv-bg.svg" alt="KV Background" />
+                  <img src={img('/imgs/kv-bg.svg')} alt="KV Background" />
                 </div>
 
                 <svg 
@@ -71,7 +72,7 @@ export default function Home() {
                   </defs>
 
                   <rect width="1200" height="717" fill="#f5cd53" />
-                  <image href="/imgs/kv-bg.svg" width="1200" height="717" mask="url(#scratchMask)" />
+                  <image href={img('/imgs/kv-bg.svg')} width="1200" height="717" mask="url(#scratchMask)" />
                 </svg>
               </div>
             </div>
@@ -81,12 +82,12 @@ export default function Home() {
         {/* About Section */}
         <section id="about">
           <div className="about-bg">
-            <img src="/imgs/kv-21.svg" alt="background decoration" className="about-bg-1" />
+            <img src={img('/imgs/kv-21.svg')} alt="background decoration" className="about-bg-1" />
           </div>
           <div className="container about-container">
             <div className="about-image">
               <div className="profile-pic-wrapper">
-                <img src="/imgs/me.svg" alt="Profile background shape" className="profile-bg-shape" />
+                <img src={img('/imgs/me.svg')} alt="Profile background shape" className="profile-bg-shape" />
               </div>
             </div>
             <div className="about-content">
@@ -98,7 +99,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="about-icons">
-                <img src="/imgs/icon 2.svg" alt="icon" />
+                <img src={img('/imgs/icon 2.svg')} alt="icon" />
                 <div className="more custom-btn">
                   <Link to="/about">
                     <span>view more</span>
@@ -119,12 +120,12 @@ export default function Home() {
             </div>
             <div className="experience-cards">
               <div>
-                <img src="/imgs/yubisashi img.svg" className="yubisashi" alt="Pointing finger" />
+                <img src={img('/imgs/yubisashi img.svg')} className="yubisashi" alt="Pointing finger" />
               </div>
               <div className="card-column">
                 <div className="card experience-card">
                   <Link to="/japanese">
-                    <img src="/imgs/japan-icon.svg" alt="Japan Icon" className="card-icon" />
+                    <img src={img('/imgs/japan-icon.svg')} alt="Japan Icon" className="card-icon" />
                     <div className="card-info">
                       <h3>日文</h3>
                       <p>
@@ -136,7 +137,7 @@ export default function Home() {
 
                 <div className="card experience-card">
                   <Link to="/illustration">
-                    <img src="/imgs/painting-icon.svg" alt="Painting Icon" className="card-icon" />
+                    <img src={img('/imgs/painting-icon.svg')} alt="Painting Icon" className="card-icon" />
                     <div className="card-info">
                       <h3>插畫</h3>
                       <p>
@@ -148,7 +149,7 @@ export default function Home() {
 
                 <div className="card experience-card">
                   <Link to="/design">
-                    <img src="/imgs/design-icon.svg" alt="Design Icon" className="card-icon" />
+                    <img src={img('/imgs/design-icon.svg')} alt="Design Icon" className="card-icon" />
                     <div className="card-info">
                       <h3>設計</h3>
                       <p>
@@ -169,9 +170,9 @@ export default function Home() {
             <div className="container-design"></div>
             <div>
               <div className="design-img">
-                <img src="/imgs/work/design/beachclean-bag.jpg" alt="Beachclean project" />
-                <img src="/imgs/work/design/coffee.jpg" alt="Coffee package" />
-                <img src="/imgs/work/design/National Palace Museum-bag.jpg" alt="Museum bag" />
+                <img src={img('/imgs/work/design/beachclean-bag.jpg')} alt="Beachclean project" />
+                <img src={img('/imgs/work/design/coffee.jpg')} alt="Coffee package" />
+                <img src={img('/imgs/work/design/National Palace Museum-bag.jpg')} alt="Museum bag" />
               </div>
               <div className="introduce">
                 <p>過去工作為平面設計，後來學了網頁設計與UIUX專業知識，致力於用能力與設計解決問題！</p>
@@ -189,9 +190,9 @@ export default function Home() {
             <div className="container-design"></div>
             <div>
               <div className="design-img">
-                <img src="/imgs/work/illustration/sunflowers-1x1.jpg" alt="Sunflowers" />
-                <img src="/imgs/work/illustration/LOHAS-1x1.jpg" alt="LOHAS" />
-                <img src="/imgs/work/illustration/market-1x1.jpg" alt="Market" />
+                <img src={img('/imgs/work/illustration/sunflowers-1x1.jpg')} alt="Sunflowers" />
+                <img src={img('/imgs/work/illustration/LOHAS-1x1.jpg')} alt="LOHAS" />
+                <img src={img('/imgs/work/illustration/market-1x1.jpg')} alt="Market" />
               </div>
               <div className="introduce">
                 <p>喜歡利用色塊與顏色繪製具有故事性的電繪插圖。除了每年主題賀年卡外、亦有喜帖委託插圖與繪本作品。</p>
@@ -209,9 +210,9 @@ export default function Home() {
             <div className="container-design"></div>
             <div>
               <div className="design-img">
-                <img src="/imgs/work/japanese/kamingu.jpg" alt="Kamingu" />
-                <img src="/imgs/work/japanese/akdsfkajhfakjh-1024x835.jpg" alt="Note slide" />
-                <img src="/imgs/work/japanese/idol_fan_woman.png" alt="Yume Joshi" />
+                <img src={img('/imgs/work/japanese/kamingu.jpg')} alt="Kamingu" />
+                <img src={img('/imgs/work/japanese/akdsfkajhfakjh-1024x835.jpg')} alt="Note slide" />
+                <img src={img('/imgs/work/japanese/idol_fan_woman.png')} alt="Yume Joshi" />
               </div>
               <div className="introduce">
                 <p>

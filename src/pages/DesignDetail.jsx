@@ -98,28 +98,28 @@ export default function DesignDetail() {
 
             <div className="info-grid">
               <div className="label">
-                <img src="/imgs/Situation.svg" alt="情況" className="icon" />情況
+                <img src={resolveImgSrc('/imgs/Situation.svg')} alt="情況" className="icon" />情況
               </div>
               <div className="text" id="situation">
                 {getSectionTextByLabel('情況')}
               </div>
 
               <div className="label">
-                <img src="/imgs/Task.svg" alt="任務" className="icon" />任務
+                <img src={resolveImgSrc('/imgs/Task.svg')} alt="任務" className="icon" />任務
               </div>
               <div className="text" id="task">
                 {getSectionTextByLabel('任務')}
               </div>
 
               <div className="label">
-                <img src="/imgs/Action.svg" alt="行動" className="icon" />行動
+                <img src={resolveImgSrc('/imgs/Action.svg')} alt="行動" className="icon" />行動
               </div>
               <div className="text" id="action">
                 {getSectionTextByLabel('行動')}
               </div>
 
               <div className="label">
-                <img src="/imgs/Result.svg" alt="結果" className="icon" />結果
+                <img src={resolveImgSrc('/imgs/Result.svg')} alt="結果" className="icon" />結果
               </div>
               <div className="text" id="result">
                 {getSectionTextByLabel('結果')}

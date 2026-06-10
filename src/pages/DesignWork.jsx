@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import designData from '../data/work-d.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import img from '../utils/imgPath';
 
 const mockupImages = {
   14: '/imgs/work/design/shop-mockup.jpg',
@@ -60,7 +61,7 @@ export default function DesignWork() {
       <div className={`work${key}`} key={index}>
         <div className="title">{title}</div>
         <div className="design-img">
-          <img src={imgSrc} alt={title} />
+          <img src={img(imgSrc)} alt={title} />
         </div>
         <div className="text"></div>
         <div className="more custom-btn">

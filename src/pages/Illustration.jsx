@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import illData from '../data/work-ill.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import img from '../utils/imgPath';
 
 const mockupImages = {
   0: '/imgs/work/illustration/apron2.png',
@@ -74,7 +75,7 @@ export default function Illustration() {
                     <div className={`work${classKey}`} key={globalIndex}>
                       <div className="title">{title}</div>
                       <div className="design-img">
-                        <img src={imgSrc} alt={title} />
+                        <img src={img(imgSrc)} alt={title} />
                       </div>
                       <div className="text"></div>
                       <div className="more custom-btn">

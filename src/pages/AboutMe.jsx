@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import img from '../utils/imgPath';
 
 export default function AboutMe() {
   useEffect(() => {
@@ -24,16 +25,16 @@ export default function AboutMe() {
             <span>
               我叫孟潔！綽號Asagi，喜歡用色彩與互動打造溫柔、有故事的畫面。過去曾參與企業活動企劃與品牌視覺設計，現正持續精進UIUX設計與網頁設計技能，希望能應用自己的技能去解決問題。
             </span>
-            <img src="/imgs/icon 2.svg" alt="icon" />
+            <img src={img('/imgs/icon 2.svg')} alt="icon" />
           </div>
           <div className="introduce">
             <p>
               我叫孟潔！綽號Asagi，喜歡用色彩與互動打造溫柔、有故事的畫面。過去曾參與企業活動企劃與品牌視覺設計，現正持續精進UIUX設計與網頁設計技能，希望能應用自己的技能去解決問題。
             </p>
-            <img src="/imgs/icon 2.svg" alt="icon" />
+            <img src={img('/imgs/icon 2.svg')} alt="icon" />
           </div>
           <div className="photo">
-            <img src="/imgs/photo-1x1.jpg" alt="MengChieh portrait" />
+            <img src={img('/imgs/photo-1x1.jpg')} alt="MengChieh portrait" />
             <div className="slogan slogan-m">
               <p>用設計，把一點陽光送進你的日常。</p>
               <p>－MengChieh</p>

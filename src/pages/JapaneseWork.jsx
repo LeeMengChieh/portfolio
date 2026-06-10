@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import jpData from '../data/work-jp.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import img from '../utils/imgPath';
 
 const mockupImages = {
   0: '/imgs/work/japanese/kamingu.jpg',
@@ -30,7 +31,7 @@ export default function JapaneseWork() {
                   <div className={`work${classKey}`} key={idx}>
                     <div className="title">{title}</div>
                     <div className="design-img">
-                      <img src={imgSrc} alt={title} />
+                      <img src={img(imgSrc)} alt={title} />
                     </div>
                     <div className="text"></div>
                     <div className="more custom-btn">

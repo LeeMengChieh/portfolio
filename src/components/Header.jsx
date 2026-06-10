@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import img from '../utils/imgPath';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,8 @@ export default function Header() {
         <div className="container">
           <Link className="navbar-brand" to="/" onClick={closeMenu}>
             <div className="logo">
-              <img src="/imgs/state=Default.svg" className="img img-a" alt="Logo Default" />
-              <img src="/imgs/state=Hover.svg" className="img img-b" alt="Logo Hover" />
+              <img src={img('/imgs/state=Default.svg')} className="img img-a" alt="Logo Default" />
+              <img src={img('/imgs/state=Hover.svg')} className="img img-b" alt="Logo Hover" />
             </div>
           </Link>
           <button 
