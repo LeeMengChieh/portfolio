@@ -464,21 +464,24 @@
       max-width: 1200px;
     }
 
-    & {
-      max-width: none;
-      margin: 0;
-      padding: 0;
-      background-color: var(--color-white);
-    }
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
 
     .page-wrapper {
       margin: auto;
       max-width: 1200px;
       padding-top: 0px;
       padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: var(--color-white);
+    }
+
+    .page-wrapper > section {
       padding-left: 100px;
       padding-right: 100px;
-      background-color: var(--color-white);
     }
 
     .header-container {
@@ -673,6 +676,20 @@
       justify-content: center;
       align-items: center;
       padding: 30px;
+    }
+
+    /* Tablet Slogan layout optimization (768px to 1024px) */
+    @media (max-width: 1024px) {
+      #about {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      #about .slogan {
+        width: 100%;
+      }
+      .slogan-desktop span {
+        width: 100%;
+      }
     }
   }
 }
