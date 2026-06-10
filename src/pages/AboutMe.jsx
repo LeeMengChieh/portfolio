@@ -47,7 +47,40 @@ export default function AboutMe() {
             <h2>工作經歴</h2>
             <div className="work1-title">
               <p>
-                活動企劃行政專員
+                前端工程師
+                <br />
+                遠振資訊股份有限公司
+                <br />
+                2025/11 ~ 至今
+              </p>
+            </div>
+            <div className="work1-text">
+              <ol>
+                <li>
+                  <p className="work1-t">前端網頁與 UI/UX 産品設計:</p>
+                  <p>
+                    運用數位設計與使用者體驗（UX）專業打造高辨識度且流暢的網頁視覺溝通。規劃與執行各項網頁畫面之視覺設計，包括從零開始主導網頁主視覺開發、版面結構規劃與 RWD 響應式畫面設計。透過 Figma 深度規劃並建立標準化設計系統（Design System），精心製作 Style Guide 規範、可複用之 UI 元件庫（Component Library）以及高保真互動 Prototype 檔案，將設計概念轉化為具體可感知的產品雛形。
+                  </p>
+                </li>
+                <li>
+                  <p className="work1-t">前端畫面開發與動態互動實作:</p>
+                  <p>
+                    支援並參與網頁產品的實作與落地，利用專業的前端網頁撰寫能力（HTML/CSS/JS）進行畫面還原。在開發過程中，除了確保視覺細節的精準呈現，更結合微互動（Micro-interactions）與動態效果設計，全面提升使用者的操作流暢度度與數位體驗。擔任設計與技術之間的溝通橋樑，將專業視覺設計能力完美整合於前端技術中。
+                  </p>
+                </li>
+                <li>
+                  <p className="work1-t">實績:</p>
+                  <p>
+                    <a href="https://whois.net.tw/" target="_blank" rel="noreferrer">
+                      Whois 網域查詢系統
+                    </a>
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div className="work1-title">
+              <p>
+                平面設計專員
                 <br />
                 佳能半導體設備股份有限公司
                 <br />
@@ -82,6 +115,7 @@ export default function AboutMe() {
                 </li>
               </ol>
             </div>
+
           </div>
 
           <div className="work-experience">

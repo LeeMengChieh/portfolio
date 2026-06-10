@@ -384,3 +384,51 @@ body.aboutme-body {
 .jp-detail-wrapper .custom-btn::after {
   content: none !important;
 }
+
+/* ========================================================== Global Custom Overrides */
+
+/* Logo flower scale animation (shrink to dot -> bloom to hollow) */
+.logo img {
+  object-fit: contain !important;
+  transform-origin: center !important;
+}
+
+.logo .img-a {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  transition: transform 0.25s ease-out 0.25s, opacity 0.25s ease-out 0.25s !important;
+}
+
+.logo:hover .img-a {
+  transform: scale(0) !important;
+  opacity: 0 !important;
+  transition: transform 0.25s ease-in, opacity 0.25s ease-in !important;
+}
+
+.logo .img-b {
+  transform: scale(0) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: transform 0.25s ease-in, opacity 0.25s ease-in !important;
+}
+
+.logo:hover .img-b {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  transition: transform 0.25s ease-out 0.25s, opacity 0.25s ease-out 0.25s !important;
+}
+
+/* Social icons inline SVG styles (exact orange hover color, instant transition) */
+.social-icons svg {
+  height: 50px;
+  width: auto;
+  margin: 12px;
+}
+
+.social-icons a svg path {
+  fill: #299ea7;
+}
+
+.social-icons a:hover svg path {
+  fill: #e9562a;
+}
