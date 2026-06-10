@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import img from '../utils/imgPath';
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,7 +45,7 @@ export default function ScrollToTop() {
         zIndex: 999
       }}
     >
-      <img src="/imgs/gototop.svg" alt="Go to top" />
+      <img src={img('/imgs/gototop.svg')} alt="Go to top" />
     </a>
   );
 }

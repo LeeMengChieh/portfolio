@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Huninn&display=swap');
 
 .aboutme-page-wrapper {
   --color-primary: #f5cd53;
@@ -10,7 +10,7 @@
 
   & {
     margin: 0;
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "Huninn", sans-serif;
     background-color: var(--color-primary);
     color: var(--color-text);
   }

@@ -48,20 +48,20 @@ export default function Home() {
                   <img src={img('/imgs/kv-bg.svg')} alt="KV Background" />
                 </div>
 
-                <svg 
+                <svg
                   ref={svgRef}
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="1200" 
-                  height="717" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1200"
+                  height="717"
                   viewBox="0 0 1200 717"
                 >
                   <defs>
                     <mask id="scratchMask">
                       <rect width="100%" height="100%" fill="black" />
-                      <g 
-                        fill="none" 
-                        stroke="white" 
-                        strokeWidth="40" 
+                      <g
+                        fill="none"
+                        stroke="white"
+                        strokeWidth="40"
                         strokeLinecap="round"
                         transform="scale(2.0,1.7925)"
                       >
@@ -99,7 +99,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="about-icons">
-                <img src={img('/imgs/icon 2.svg')} alt="icon" />
+                <img src={img('/imgs/icon 3.svg')} alt="icon" />
                 <div className="more custom-btn">
                   <Link to="/about">
                     <span>view more</span>
