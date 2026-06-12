@@ -84,7 +84,7 @@ export default function AboutMe() {
                 <br />
                 佳能半導體設備股份有限公司
                 <br />
-                2023/06 ~ 2025.05
+                2023/06 ~ 2025/05
               </p>
             </div>
             <div className="work1-text">

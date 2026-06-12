@@ -61,7 +61,9 @@ export default function DesignWork() {
       <div className={`work${key}`} key={index}>
         <div className="title">{title}</div>
         <div className="design-img">
-          <img src={img(imgSrc)} alt={title} />
+          <Link to={`/design/${index}`} style={{ display: 'block', width: '100%', height: '100%' }}>
+            <img src={img(imgSrc)} alt={title} style={{ display: 'block', width: '100%' }} />
+          </Link>
         </div>
         <div className="text"></div>
         <div className="more custom-btn">
