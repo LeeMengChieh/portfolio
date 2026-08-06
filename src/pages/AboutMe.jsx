@@ -126,7 +126,7 @@ export default function AboutMe() {
                   <p className="work1-t">
                     資展UX人機介面網頁設計師養成班
                     <br />
-                    2025／06～2023／10
+                    2025／06～2025／10
                   </p>
                 </li>
                 <li>
